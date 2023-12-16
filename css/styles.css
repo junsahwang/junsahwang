@@ -1,0 +1,53 @@
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #2c2c2c;
+  margin: 0; 
+}
+h1, h2, h3, p, ul, li {
+  font-family: 'Outfit', sans-serif;
+}
+/*SIDEBAR*/
+.sidebar {
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  background-color: #111;
+  overflow-x: hidden;
+}
+.sidebarinsides {
+  padding: 70px;
+}
+.myname a {
+  font-size: 60px; 
+  color: #ffffff; 
+  font-weight: bold;
+  text-decoration: none;
+}
+.sidebarinsides ul {
+  list-style: none;
+  padding:10px;
+}
+.sidebar ul li {
+  padding-top: 25px;
+}
+.sidebar ul li a {
+  color: rgb(184, 184, 184);
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  transition: color 0.3s ease;
+}
+.sidebar ul li a:hover {
+  color: #ffffff; 
+}
+.sidebar .sidebarinsides ul li a.active {
+  color: white; 
+}
+.batman-text {
+  color: #393939;
+  padding: 70px;
+}
+/*SIDEBAR*/
+/*MAIN*/
+
+/*MAIN*/
