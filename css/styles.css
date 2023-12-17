@@ -53,8 +53,8 @@ body {
   color: white;
 }
 
-.batman-text {
-  color: #393939;
+.batman {
+  color: #fff;
   padding: 20%;
 }
 /* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR */
@@ -62,9 +62,13 @@ body {
 /* TOPBAR *//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*/
 .topbar {
   display: none; 
-  background-color: #111;
-  color: #ffff;
 }
+.mediasidebar {
+  display: none;
+}
+
+/* Rest of your styles */
+
 /*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*/
 
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
@@ -130,11 +134,101 @@ footer {
   }
 
   .topbar {
-    display: block;
-    width: 100%;
-    text-align: center;
-    top: 0;
+    display: flex;
+    background-color: #111;
+    color: #ffff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7%;
   }
+
+  .topbar2 {
+    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+  }
+
+  .brand {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+
+  .open {
+    font-size: 1.3rem;
+  }
+
+  .sidebar2 {
+    padding: 5%;
+    padding-left: 10%;
+  }
+
+  .mediasidebar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%; 
+    width: 100%;
+    height: 100vh; 
+    background-color: #111;
+    color: #fff;
+    transition: left 0.3s ease; 
+  }
+
+  .myname2 {
+    text-align: left;
+  }
+
+  .myname2 a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 3.2rem;
+  }
+
+  .sidebarinsides2 {
+    padding: 5%;
+    color: #fff;
+    list-style: none;
+    text-align: left;
+  }
+  
+  .sidebarinsides2 ul {
+    list-style: none;
+    padding: 0%;
+    padding-top: 20%;
+  }
+
+  .sidebarinsides2 ul li {
+    padding-top: 10%;
+    font-size: 1.2rem;
+  }
+
+  .sidebarinsides2 ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: #b4b4b4 ;
+  }
+
+  .sidebarinsides2 ul li a.active{
+    color: #ffff ;
+  }
+
+  .close {
+    padding: 7%;
+    font-size: 1.3rem;
+  }
+
+  .batman2 {
+    color: #393939;
+    padding: 10%;
+    padding-top: 20%;
+    font-size: 1rem;
+  }
+
+  .footerjunsa {
+    font-size: 1.25rem;
+  }
+  
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .sidebar {
