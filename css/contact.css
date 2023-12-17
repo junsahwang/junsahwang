@@ -288,7 +288,7 @@ footer {
     display: none;
   }
 }
-@media screen and (min-width: 1037px) and (max-width: 1196px) {
+@media screen and (min-width: 1022px) and (max-width: 1250px) {
   .logo {
     font-size: 15vh;
     padding: 4%;
