@@ -94,7 +94,7 @@ body {
 }
 
 .gridinsides {
-  padding: 5vh;
+  padding: 10%;
 }
 
 .logo {
@@ -134,7 +134,79 @@ footer {
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 
 /* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1024px) and (max-width: 1264px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gridinsides {
+    padding: 7vh;
+  }
+
+  .sidebar ul li a {
+    font-size: 2vh;
+  }
+
+  .batman {
+    font-size: 1.2vh;
+  }
+  
+  .logo {
+    font-size: 15vh;
+    padding: 4%;
+  }
+  
+  .logoname {
+    padding-top: 6%;
+    font-size: 2.5vh;
+  }
+  
+  .desc {
+    padding: 5%;
+    font-size: 2.5vh;
+  }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .sidebar {
+    width: 40%;
+  }
+
+  .batman {
+    padding-top: 10%;
+  }
+
+  .main {
+    width: 60%;
+    margin-left: 40%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gridinsides {
+    padding: 7vh;
+  }
+  
+  .logo {
+    font-size: 17vh;
+    padding: 4%;
+  }
+  
+  .logoname {
+    padding-top: 6%;
+    font-size: 4vh;
+  }
+  
+  .desc {
+    padding: 5%;
+    font-size: 3vh;
+  }
+}
+
+@media screen and (max-width: 769px) {
   .sidebar {
     display: none;
   }
@@ -264,45 +336,8 @@ footer {
   }
   
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .sidebar {
-    width: 40%;
-  }
 
-  .batman {
-    padding-top: 10%;
-  }
-
-  .main {
-    width: 60%;
-    margin-left: 40%;
-  }
-
-  .grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .gridinsides {
-    padding: 7vh;
-  }
-  
-  .logo {
-    font-size: 17vh;
-    padding: 4%;
-  }
-  
-  .logoname {
-    padding-top: 6%;
-    font-size: 4vh;
-  }
-  
-  .desc {
-    padding: 5%;
-    font-size: 3vh;
-  }
-}
-
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 423px) {
   .main {
     display: none;
   }
@@ -337,30 +372,5 @@ footer {
     display: none;
   }
 }
-@media screen and (min-width: 1022px) and (max-width: 1264px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .gridinsides {
-    padding: 7vh;
-  }
-  
-  .logo {
-    font-size: 15vh;
-    padding: 4%;
-  }
-  
-  .logoname {
-    padding-top: 6%;
-    font-size: 4vh;
-  }
-  
-  .desc {
-    padding: 5%;
-    font-size: 3vh;
-  }
-}
-
 /* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA */
 

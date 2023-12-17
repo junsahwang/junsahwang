@@ -78,10 +78,17 @@ body {
   width: 70%;
   margin-left: 30%;
 }
+
+.jokeform {
+  height: 110vh;
+  padding: 2%;
+}
+
 .jokeform iframe {
   border: none;
   width: 100%;
-  height: 110vh;
+  height: 100%;
+
 }
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
 
@@ -106,7 +113,26 @@ footer {
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 
 /* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1024px) and (max-width: 1250px) {
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .sidebar {
+    width: 40%;
+  }
+
+  .batman {
+    padding-top: 10%;
+  }
+
+  .main {
+    width: 60%;
+    margin-left: 40%;
+  }
+}
+
+@media screen and (max-width: 769px) {
   .sidebar {
     display: none;
   }
@@ -223,22 +249,8 @@ footer {
   }
   
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .sidebar {
-    width: 40%;
-  }
 
-  .batman {
-    padding-top: 10%;
-  }
-
-  .main {
-    width: 60%;
-    margin-left: 40%;
-  }
-}
-
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 423px) {
   .main {
     display: none;
   }
@@ -273,9 +285,5 @@ footer {
     display: none;
   }
 }
-@media screen and (min-width: 1022px) and (max-width: 1250px) {
-
-}
-
 /* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA */
 

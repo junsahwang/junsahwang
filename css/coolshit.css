@@ -101,7 +101,54 @@ footer {
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 
 /* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1024px) and (max-width: 1250px) {
+  .logo {
+    font-size: 15vh;
+    padding: 4%;
+  }
+  
+  .logoname {
+    padding-top: 6%;
+    font-size: 4vh;
+  }
+  
+  .desc {
+    padding: 5%;
+    font-size: 3vh;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .sidebar {
+    width: 40%;
+  }
+
+  .batman {
+    padding-top: 10%;
+  }
+
+  .main {
+    width: 60%;
+    margin-left: 40%;
+  }
+
+  .logo {
+    font-size: 15vh;
+    padding: 4%;
+  }
+  
+  .logoname {
+    padding-top: 6%;
+    font-size: 4vh;
+  }
+  
+  .desc {
+    padding: 5%;
+    font-size: 3vh;
+  }
+}
+
+@media screen and (max-width: 769px) {
   .sidebar {
     display: none;
   }
@@ -223,37 +270,8 @@ footer {
   }
   
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .sidebar {
-    width: 40%;
-  }
 
-  .batman {
-    padding-top: 10%;
-  }
-
-  .main {
-    width: 60%;
-    margin-left: 40%;
-  }
-
-  .logo {
-    font-size: 15vh;
-    padding: 4%;
-  }
-  
-  .logoname {
-    padding-top: 6%;
-    font-size: 4vh;
-  }
-  
-  .desc {
-    padding: 5%;
-    font-size: 3vh;
-  }
-}
-
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 423px) {
   .main {
     display: none;
   }
@@ -288,22 +306,5 @@ footer {
     display: none;
   }
 }
-@media screen and (min-width: 1022px) and (max-width: 1250px) {
-  .logo {
-    font-size: 15vh;
-    padding: 4%;
-  }
-  
-  .logoname {
-    padding-top: 6%;
-    font-size: 4vh;
-  }
-  
-  .desc {
-    padding: 5%;
-    font-size: 3vh;
-  }
-}
-
 /* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA */
 
