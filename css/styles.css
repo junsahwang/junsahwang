@@ -98,7 +98,7 @@ body {
 }
 
 .logo {
-  font-size: 12vh;
+  font-size: 15vh;
   padding: 4%;
 }
 
@@ -160,18 +160,18 @@ footer {
   }
   
   .logo {
-    font-size: 15vh;
+    font-size: 17vh;
     padding: 4%;
   }
   
   .logoname {
     padding-top: 6%;
-    font-size: 4vh;
+    font-size: 3.5vh;
   }
   
   .desc {
     padding: 5%;
-    font-size: 3vh;
+    font-size: 2.5vh;
   }
 
   .topbar {
@@ -287,7 +287,7 @@ footer {
   }
   
   .logo {
-    font-size: 15vh;
+    font-size: 17vh;
     padding: 4%;
   }
   
@@ -337,7 +337,7 @@ footer {
     display: none;
   }
 }
-@media screen and (min-width: 1022px) and (max-width: 1250px) {
+@media screen and (min-width: 1022px) and (max-width: 1264px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
