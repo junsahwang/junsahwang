@@ -48,7 +48,15 @@ h1, h2, h3, p, ul, li {
   color: #393939;
   padding: 70px;
 }
-/*SIDEBAR*/
+
+/* TOPBAR */
+.topbar {
+  display: none; 
+  background-color: #111;
+  color: #ffff;
+}
+/*TOPBAR*/
+
 /*MAIN*/
 .main {
   width: 75%;
@@ -68,3 +76,40 @@ h1, h2, h3, p, ul, li {
   overflow: hidden; 
 }
 /*MAIN*/
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .main {
+    width: 100%;
+    margin-left: 0;
+  }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-item {
+    padding: 20px;
+  }
+  .topbar {
+    display: block; 
+    width: 100%;
+    text-align: center;
+    top: 0;
+  }
+}
+}
+
+/* For screens between 768px and 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .sidebar {
+    width: 40%;
+  }
+  .main {
+    width: 60%;
+    margin-left: 40%;
+  }
+}
