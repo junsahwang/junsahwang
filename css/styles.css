@@ -54,7 +54,7 @@ body {
 }
 
 .batman {
-  color: #fff;
+  color: #393939;
   padding: 20%;
 }
 /* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR */
@@ -103,7 +103,7 @@ footer {
 
 .footerjunsa {
   color: #fff;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
   font-size: 1.5rem;
 }
 
@@ -111,6 +111,12 @@ footer {
   color: #fff;
   font-size: 1.3rem;
   padding: 3%;
+}
+
+.copyright {
+  color: #7f7f7f;
+  font-size: 1rem;
+  padding-top: 3%;
 }
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 
@@ -139,7 +145,7 @@ footer {
     color: #ffff;
     justify-content: space-between;
     align-items: center;
-    padding: 7%;
+    padding: 5%;
   }
 
   .topbar2 {
@@ -150,7 +156,7 @@ footer {
   }
 
   .brand {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: left;
   }
 
