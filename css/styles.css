@@ -139,7 +139,7 @@ footer {
     color: #ffff;
     justify-content: space-between;
     align-items: center;
-    padding: 5%;
+    padding: 3% 5% 3% 7%;
   }
 
   .topbar2 {
@@ -150,12 +150,12 @@ footer {
   }
 
   .brand {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-align: left;
   }
 
   .open {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .sidebar2 {
@@ -223,6 +223,9 @@ footer {
     padding: 5%;
     padding-top: 20%;
     font-size: 1rem;
+  }
+  .footermedia a {
+    padding: 4%;
   }
   
 }
