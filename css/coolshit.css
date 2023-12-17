@@ -11,18 +11,18 @@ body {
 /* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR */
 .sidebar {
   height: 100%;
-  width: 25%;
+  width: 30%;
   position: fixed;
   background-color: #111;
   overflow-x: hidden;
 }
 
 .sidebarinsides {
-  padding: 20%;
+  padding: 22%;
 }
 
 .myname a {
-  font-size: 3.6rem;
+  font-size: 3.7rem;
   color: #fff;
   font-weight: bold;
   text-decoration: none;
@@ -56,7 +56,8 @@ body {
 
 .batman {
   color: #393939;
-  padding: 20%;
+  padding: 22%;
+  padding-top: 10%;
 }
 /* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR */
 
@@ -74,8 +75,8 @@ body {
 
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
 .main {
-  width: 75%;
-  margin-left: 25%;
+  width: 70%;
+  margin-left: 30%;
 }
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
 
@@ -105,9 +106,31 @@ footer {
     display: none;
   }
 
+  .batman2 {
+    color: #393939;
+    padding: 5%;
+    padding-top: 10%;
+    font-size: 1rem;
+  }
+
   .main {
     width: 100%;
     margin-left: 0;
+  }
+  
+  .logo {
+    font-size: 15vh;
+    padding: 4%;
+  }
+  
+  .logoname {
+    padding-top: 6%;
+    font-size: 4vh;
+  }
+  
+  .desc {
+    padding: 5%;
+    font-size: 3vh;
   }
 
   .topbar {
@@ -127,12 +150,12 @@ footer {
   }
 
   .brand {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-align: left;
   }
 
   .open {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .sidebar2 {
@@ -172,7 +195,7 @@ footer {
   .sidebarinsides2 ul {
     list-style: none;
     padding: 0%;
-    padding-top: 20%;
+    padding-top: 10%;
   }
 
   .sidebarinsides2 ul li {
@@ -195,27 +218,92 @@ footer {
     font-size: 1.3rem;
   }
 
-  .batman2 {
-    color: #393939;
-    padding: 5%;
-    padding-top: 20%;
-    font-size: 1rem;
-  }
-
   .footermedia a {
     padding: 4%;
   }
-
+  
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .sidebar {
     width: 40%;
   }
 
+  .batman {
+    padding-top: 10%;
+  }
+
   .main {
     width: 60%;
     margin-left: 40%;
   }
+
+  .logo {
+    font-size: 15vh;
+    padding: 4%;
+  }
+  
+  .logoname {
+    padding-top: 6%;
+    font-size: 4vh;
+  }
+  
+  .desc {
+    padding: 5%;
+    font-size: 3vh;
+  }
 }
+
+@media screen and (max-width: 300px) {
+  .main {
+    display: none;
+  }
+
+  .batman {
+    padding-top: 10%;
+  }
+
+  .topbar {
+    display: none;
+  }
+
+  .sidebar {
+    display: block;
+    width: 100%;
+  }
+
+  .sidebarinsides {
+  padding: 20%;
+  }
+
+  .myname a {
+    font-size: 2.5rem;
+  }
+
+  .sidebarinsides ul {
+    padding: 4%;
+    padding-top: 5%;
+  }
+
+  .sidebar2 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1037px) and (max-width: 1196px) {
+  .logo {
+    font-size: 15vh;
+    padding: 4%;
+  }
+  
+  .logoname {
+    padding-top: 6%;
+    font-size: 4vh;
+  }
+  
+  .desc {
+    padding: 5%;
+    font-size: 3vh;
+  }
+}
+
 /* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA */
 
