@@ -173,6 +173,8 @@ footer {
   .brand {
     font-size: 1.6rem;
     text-align: left;
+    text-decoration: none;
+    color: #fff;
   }
 
   .open {
