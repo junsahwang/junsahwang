@@ -418,6 +418,11 @@ footer {
     font-weight: normal;
   }
 
+  .item .descr h1,
+  .item .descl h1  {
+    font-weight: normal;
+  }
+
   .close {
     padding: 7%;
     font-size: 1.3rem;
