@@ -39,7 +39,7 @@ body {
 }
 
 .sidebar ul li a {
-  color: rgb(184, 184, 184);
+  color: #5c5c5c;
   text-decoration: none;
   font-size: 1.2rem;
   display: block;
@@ -250,7 +250,7 @@ footer {
   
 }
 
-@media screen and (max-width: 423px) {
+@media screen and (max-width: 320px) {
   .main {
     display: none;
   }
