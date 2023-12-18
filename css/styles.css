@@ -55,7 +55,7 @@ body {
 }
 
 .batman {
-  color: #393939;
+  color: #232323;
   padding: 22%;
   padding-top: 10%;
 }
@@ -142,14 +142,6 @@ footer {
   .gridinsides {
     padding: 7vh;
   }
-
-  .sidebar ul li a {
-    font-size: 2vh;
-  }
-
-  .batman {
-    font-size: 1.2vh;
-  }
   
   .logo {
     font-size: 15vh;
@@ -212,7 +204,6 @@ footer {
   }
 
   .batman2 {
-    color: #393939;
     padding: 5%;
     padding-top: 10%;
     font-size: 1rem;
