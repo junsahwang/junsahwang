@@ -415,6 +415,7 @@ footer {
     font-size: 1.5rem; 
     bottom: 1vh; 
     left: 3vh; 
+    font-weight: normal;
   }
 
   .close {
@@ -482,6 +483,7 @@ footer {
 
   .myname a {
     font-size: 2.5rem;
+    font-weight: normal;
   }
 
   .sidebarinsides ul {
