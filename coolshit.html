@@ -63,9 +63,59 @@
 
 <!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN -->
 <div class="main">
-  <div>
-    
+  <div class="coolgrid">
+    <div class="legos" onclick="openPopup('legos');" style="background-image: url('imgs/legos.jpeg');">
+      <div class="box">
+        <p class="title">LEGOS</p>
+      </div>
+    </div>
+    <div class="hikes" onclick="openPopup('hikes');" style="background-image: url('imgs/hikes.png');">
+      <div class="box">
+        <p class="title">HIKES</p>
+      </div>
+    </div>
+    <div class="cars" onclick="openPopup('cars');" style="background-image: url('imgs/cars.png');">
+      <div class="box">
+        <p class="title">CARS</p>
+      </div>
+    </div>
   </div>
+
+<!-- POPUP --><!-- POPUP --><!-- POPUP --><!-- POPUP --><!-- POPUP --><!-- POPUP --><!-- POPUP --><!-- POPUP --><!-- POPUP -->
+<div class="popup" id="popup-legos">
+  <div class="legoinsides">
+    <span class="close-btn" onclick="closePopup('legos');"><i class="fas fa-times"></i></span>
+    <div class="gallery">
+      <img src="image1_legos.jpg" alt="Image 1">
+      <img src="image2_legos.jpg" alt="Image 2">
+      <img src="image3_legos.jpg" alt="Image 3">
+    </div>
+  </div>
+</div>
+
+<div class="popup" id="popup-hikes">
+  <div class="legoinsides">
+    <span class="close-btn" onclick="closePopup('hikes');"><i class="fas fa-times"></i></span>
+    <div class="gallery">
+      <img src="image1_hikes.jpg" alt="Image 1">
+      <img src="image2_hikes.jpg" alt="Image 2">
+      <img src="image3_hikes.jpg" alt="Image 3">
+    </div>
+  </div>
+</div>
+
+<div class="popup" id="popup-cars">
+  <div class="legoinsides">
+    <span class="close-btn" onclick="closePopup('cars');"><i class="fas fa-times"></i></span>
+    <div class="gallery">
+      <img src="image1_cars.jpg" alt="Image 1">
+      <img src="image2_cars.jpg" alt="Image 2">
+      <img src="image3_cars.jpg" alt="Image 3">
+    </div>
+  </div>
+</div>
+<!-- POPUP --><!-- POPUP --><!-- POPUP --><!-- POPUP --><!-- POPUP --><!-- POPUP --><!-- POPUP --><!-- POPUP --><!-- POPUP -->
+
 <!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER -->
 <footer>
   <div class="footermedia">

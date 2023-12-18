@@ -51,7 +51,7 @@ body {
 }
 
 .sidebar .sidebarinsides ul li a.active {
-  color: white;
+  color:#fff;
 }
 
 .batman {
@@ -68,9 +68,6 @@ body {
 .mediasidebar {
   display: none;
 }
-
-/* Rest of your styles */
-
 /*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*/
 
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
@@ -78,6 +75,79 @@ body {
   width: 70%;
   margin-left: 30%;
 }
+
+.coolgrid {
+  display: grid;
+  grid-template-columns: auto auto; 
+  grid-gap: 3vh;
+  padding: 5vh;
+  position: relative; 
+}
+
+.coolgrid > div {
+  height: 50vh;
+  text-align: center;
+  background-color: #7f7f7f;
+  position: relative;
+  transition: transform 0.3s ease;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.box {
+  backdrop-filter: blur(0.5vh); 
+  background-color: #86868660;
+  font-size: 1.5rem; 
+  height: 100%;
+}
+
+.coolgrid > div:hover {
+  transform: scale(1.01); 
+}
+
+.cars {
+  grid-column: span 2;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.5rem; 
+  bottom: 1vh; 
+  left: 5vh; 
+  position: absolute;
+  color: #fff;
+}
+/* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.96);
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+}
+
+.legoinsides {
+  padding: 3%;
+}
+
+.gallery {
+  padding: 5%;
+  height: 6vh;
+  width: 40vh;
+}
+
+.close-btn {
+  cursor: pointer;
+  color: #333;
+  font-size: 2rem;
+  padding: 5% 5%;
+  z-index: 99;
+}
+/* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP */
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
 
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
@@ -119,19 +189,36 @@ footer {
     margin-left: 40%;
   }
 
-  .logo {
-    font-size: 15vh;
-    padding: 4%;
+  .coolgrid > div {
+    height: 75vh;
+  }
+
+  .coolgrid {
+    grid-template-columns: 1fr;
+    grid-gap: 2vh;
+    padding: 2vh;
   }
   
-  .logoname {
-    padding-top: 6%;
-    font-size: 4vh;
+  .coolgrid > div {
+    height: 50vh;
   }
   
-  .desc {
-    padding: 5%;
-    font-size: 3vh;
+  .coolgrid > div:hover {
+    transform: scale(1); 
+  }
+  
+  .cars {
+    grid-column: auto;
+  }
+
+  .coolgrid > div:hover {
+    transform: scale(1.0); 
+  }
+  
+  .title {
+    font-size: 1.5rem; 
+    bottom: 1vh; 
+    left: 3vh; 
   }
 }
 
@@ -244,6 +331,34 @@ footer {
 
   .sidebarinsides2 ul li a.active{
     color: #ffff ;
+  }
+
+  .coolgrid {
+    grid-template-columns: 1fr;
+    grid-gap: 2vh;
+    padding: 2vh;
+  }
+  
+  .coolgrid > div {
+    height: 50vh;
+  }
+  
+  .coolgrid > div:hover {
+    transform: scale(1); 
+  }
+  
+  .cars {
+    grid-column: auto;
+  }
+
+  .coolgrid > div:hover {
+    transform: scale(1.0); 
+  }
+  
+  .title {
+    font-size: 1.5rem; 
+    bottom: 1vh; 
+    left: 3vh; 
   }
 
   .close {
