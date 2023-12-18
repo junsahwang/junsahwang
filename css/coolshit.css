@@ -140,6 +140,7 @@ hr {
 
 .close-btn {
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .gallery {
@@ -161,13 +162,13 @@ hr {
 .descr {
   width: 100%;
   padding-left: 5vh;
-  text-align: right;
+  text-align: left;
 }
 
-.descr {
+.descl {
   width: 100%;
   padding-right: 5vh;
-  text-align: left;
+  text-align: right;
 }
 
 .clmndescl {
@@ -444,8 +445,11 @@ footer {
   }
   
   .descl {
-    padding-right: 3vh 0vh;
-    text-align: left;
+    display: none;
+  }
+
+  .clmndescl {
+    display: block;
   }
 
   .footermedia a {
