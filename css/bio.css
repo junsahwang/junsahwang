@@ -78,6 +78,11 @@ body {
   width: 70%;
   margin-left: 30%;
 }
+
+.container {
+  padding: 2rem;
+}
+
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
 
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
@@ -249,6 +254,10 @@ footer {
   .close {
     padding: 7%;
     font-size: 1.3rem;
+  }
+
+  .container {
+    padding: 1rem;
   }
 
   .footermedia a {

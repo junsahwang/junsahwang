@@ -95,7 +95,7 @@ body {
 }
 
 .box {
-  backdrop-filter: blur(0.5vh); 
+  backdrop-filter: blur(1vh); 
   background-color: #86868660;
   font-size: 1.5rem; 
   height: 100%;
@@ -125,27 +125,74 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(255, 255, 255, 0.96);
-  z-index: 10;
+  z-index: 1;
   height: 100%;
   width: 100%;
+  overflow-y: auto;
 }
 
-.legoinsides {
+.popupinsides {
   padding: 3%;
-}
-
-.gallery {
-  padding: 5%;
-  height: 6vh;
-  width: 40vh;
 }
 
 .close-btn {
   cursor: pointer;
   color: #333;
   font-size: 2rem;
-  padding: 5% 5%;
-  z-index: 99;
+  padding: 3%;
+  z-index: 2;
+}
+
+.gallery {
+  display: grid;
+  grid-gap: 5%;
+  padding: 5%;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0%;
+  padding-bottom: 5%;
+}
+
+.item img {
+  width: 65%;
+  height: auto;
+}
+
+.descr {
+  width: 100%;
+  text-align: right;
+  padding: 0% 5%;
+}
+
+.descr h1 {
+  font-size: 8vh;
+  margin: 0rem;
+  text-align: left;
+}
+
+.descr p {
+  text-align: left;
+}
+
+.descl {
+  width: 100%;
+  text-align: right;
+  padding: 0% 5%;
+}
+
+.descl h1 {
+  font-size: 8vh;
+  margin: 0%;
+  text-align: right;
+}
+
+.descl p {
+  text-align: right;
 }
 /* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP *//* POPUP */
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
@@ -171,8 +218,7 @@ footer {
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 
 /* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA */
-@media screen and (min-width: 1024px) and (max-width: 1250px) {
-
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -220,6 +266,7 @@ footer {
     bottom: 1vh; 
     left: 3vh; 
   }
+
 }
 
 @media screen and (max-width: 769px) {
@@ -246,11 +293,6 @@ footer {
   .logoname {
     padding-top: 6%;
     font-size: 4vh;
-  }
-  
-  .desc {
-    padding: 5%;
-    font-size: 3vh;
   }
 
   .topbar {
@@ -293,6 +335,7 @@ footer {
     background-color: #111;
     color: #fff;
     transition: left 0.3s ease; 
+    z-index: 20;
   }
 
   .myname2 {
@@ -364,6 +407,13 @@ footer {
   .close {
     padding: 7%;
     font-size: 1.3rem;
+  }
+
+  .popupinsides {
+    padding: 10%;
+  }
+  .container {
+    padding: 3rem 0.1rem;
   }
 
   .footermedia a {
