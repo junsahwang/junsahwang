@@ -15,6 +15,7 @@ body {
   position: fixed;
   background-color: #111;
   overflow-x: hidden;
+  z-index: 99;
 }
 
 .sidebarinsides {
@@ -74,6 +75,7 @@ body {
 .main {
   width: 70%;
   margin-left: 30%;
+  z-index: 0;
 }
 
 .banner {
@@ -85,7 +87,6 @@ body {
 }
 
 .bannerimg {
-  z-index: 1;
   width: 100%;
   height: 55vh;
 }
@@ -99,7 +100,7 @@ body {
   padding: 5%;
   position: absolute;
   text-align: center; 
-  z-index: 5;
+  z-index: 1;
 }
 
 .quote {
@@ -196,13 +197,13 @@ footer {
 }
 
 .footermedia a {
-  color: #fff;
+  color: #db2c2c;
   font-size: 2rem;
   padding: 2%;
 }
 
 .copyright {
-  color: #7f7f7f;
+  color: #db2c2c;
   font-size: 1rem;
   padding-top: 5%;
 }
@@ -273,6 +274,7 @@ footer {
   }
 
   .batman2 {
+    color: #363636;
     padding: 5%;
     padding-top: 10%;
     font-size: 1rem;
@@ -323,6 +325,7 @@ footer {
 
   .open {
     font-size: 1.5rem;
+    color: #db2c2c;
   }
 
   .sidebar2 {
@@ -340,6 +343,7 @@ footer {
     background-color: #111;
     color: #fff;
     transition: left 0.3s ease; 
+    z-index: 99;
   }
 
   .myname2 {
@@ -383,6 +387,11 @@ footer {
   .close {
     padding: 7%;
     font-size: 1.3rem;
+    color: #db2c2c;
+  }
+
+  .sig {
+    font-weight: normal;
   }
 
   .stagecontent1,

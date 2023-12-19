@@ -15,6 +15,7 @@ body {
   position: fixed;
   background-color: #111;
   overflow-x: hidden;
+  z-index: 99;
 }
 
 .sidebarinsides {
@@ -100,13 +101,13 @@ footer {
 }
 
 .footermedia a {
-  color: #fff;
+  color: #db2c2c;
   font-size: 2rem;
   padding: 2%;
 }
 
 .copyright {
-  color: #7f7f7f;
+  color: #db2c2c;
   font-size: 1rem;
   padding-top: 5%;
 }
@@ -138,6 +139,7 @@ footer {
   }
 
   .batman2 {
+    color: #363636;
     padding: 5%;
     padding-top: 10%;
     font-size: 1rem;
@@ -179,6 +181,7 @@ footer {
 
   .open {
     font-size: 1.5rem;
+    color: #db2c2c;
   }
 
   .sidebar2 {
@@ -239,6 +242,7 @@ footer {
   .close {
     padding: 7%;
     font-size: 1.3rem;
+    color: #db2c2c;
   }
 
   footer {

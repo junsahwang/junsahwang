@@ -4,7 +4,6 @@ body, h1, h2, h3, p, ul, li {
 
 body {
   background-color: #373737;
-  color: #fff;
   margin: 0;
   overflow-x: hidden;
 }
@@ -16,6 +15,7 @@ body {
   position: fixed;
   background-color: #111;
   overflow-x: hidden;
+  z-index: 99;
 }
 
 .sidebarinsides {
@@ -106,6 +106,7 @@ body {
 .logoname {
   color: #fff;
   padding-top: 4%;
+  font-size: 1.5rem; 
 }
 
 .desc {
@@ -122,13 +123,13 @@ footer {
 }
 
 .footermedia a {
-  color: #fff;
+  color: #db2c2c;
   font-size: 2rem;
   padding: 2%;
 }
 
 .copyright {
-  color: #7f7f7f;
+  color: #db2c2c;
   font-size: 1rem;
   padding-top: 5%;
 }
@@ -151,7 +152,6 @@ footer {
   
   .logoname {
     padding-top: 6%;
-    font-size: 2.5vh;
   }
   
   .desc {
@@ -190,7 +190,6 @@ footer {
   
   .logoname {
     padding-top: 6%;
-    font-size: 4vh;
   }
   
   .desc {
@@ -205,6 +204,7 @@ footer {
   }
 
   .batman2 {
+    color: #363636;
     padding: 5%;
     padding-top: 10%;
     font-size: 1rem;
@@ -230,12 +230,11 @@ footer {
   
   .logoname {
     padding-top: 6%;
-    font-size: 3.5vh;
   }
   
   .desc {
     padding: 5%;
-    font-size: 2.5vh;
+    font-size: 1.3rem;
   }
 
   .topbar {
@@ -263,6 +262,7 @@ footer {
 
   .open {
     font-size: 1.5rem;
+    color: #db2c2c;
   }
 
   .sidebar2 {
@@ -323,6 +323,7 @@ footer {
   .close {
     padding: 7%;
     font-size: 1.3rem;
+    color: #db2c2c;
   }
 
   .footermedia a {
