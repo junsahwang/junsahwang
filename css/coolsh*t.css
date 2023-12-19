@@ -431,7 +431,8 @@ footer {
   }
 
   .item .descr h1,
-  .item .descl h1  {
+  .item .descl h1,
+  .item .clmndescl h1  {
     font-weight: normal;
   }
 
@@ -457,6 +458,12 @@ footer {
   .descr {
     padding: 1vh 0vh;
     text-align: left;
+  }
+
+  .item .descr h1,
+  .item .descl h1,
+  .item .clmndescl h1  {
+    font-weight: normal;
   }
   
   .descl {
