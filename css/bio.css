@@ -128,22 +128,29 @@ body {
   align-items: center;
 }
 
-.stagecontent {
+.stagecontent1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: left;
+  padding: 0% 0%;
+}
+
+.stagecontent2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
   padding: 0% 0%;
 }
 
 .stagewords1 {
-  width: 60%;
+  width: 35%;
   height: 30vh;
   text-align: left;
   padding: 5% 5%;
 }
 
 .stagewords2 {
-  width: 60%;
+  width: 35%;
   height: 30vh;
   text-align: right;
   padding: 5% 5%;
@@ -159,7 +166,15 @@ body {
 .stagewords2b h1,
 .stagewords2 h1, 
 .stagewords1 h1 {
-  padding: 0;
+  padding-bottom: 10%;
+}
+
+.stagewords2b h1,
+.stagewords2 h1, 
+.stagewords1 h1,
+.stagewords2b p,
+.stagewords2 p, 
+.stagewords1 p {
   margin: 0;
 }
 
@@ -227,8 +242,16 @@ footer {
     font-size: 3vh;
   }
 
-  .stagecontent {
+  .stagecontent1,
+  .stagecontent2 {
     flex-direction: column;
+  }
+
+  .stagewords1,
+  .stagewords2,
+  .stagewords2b {
+    width: 80%;
+    padding: 5% 10%;
   }
 
   .stageimg {
@@ -362,8 +385,16 @@ footer {
     font-size: 1.3rem;
   }
 
-  .stagecontent {
+  .stagecontent1,
+  .stagecontent2 {
     flex-direction: column;
+  }
+
+  .stagewords1,
+  .stagewords2,
+  .stagewords2b {
+    width: 80%;
+    padding: 5% 10%;
   }
 
   .stageimg {
@@ -419,7 +450,8 @@ footer {
     display: none;
   }
 
-  .stagecontent {
+  .stagecontent1,
+  .stagecontent2 {
     flex-direction: column;
   }
 
