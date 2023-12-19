@@ -243,6 +243,10 @@ footer {
     font-size: 3vh;
   }
 
+  .stage h1 {
+    font-weight: normal;
+  }
+
   .stagecontent1,
   .stagecontent2 {
     flex-direction: column;
@@ -390,6 +394,10 @@ footer {
     color: #db2c2c;
   }
 
+  .stage h1 {
+    font-weight: normal;
+  }
+
   .sig {
     font-weight: normal;
   }
@@ -457,6 +465,10 @@ footer {
 
   .sidebar2 {
     display: none;
+  }
+
+  .stage h1 {
+    font-weight: normal;
   }
 
   .stagecontent1,
