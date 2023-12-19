@@ -99,7 +99,7 @@ hr {
 }
 
 .box {
-  background-color: #121212bb;
+  background-color: #1212127a;
   height: 100%;
 }
 
@@ -429,10 +429,6 @@ footer {
   .close {
     padding: 7%;
     font-size: 1.3rem;
-  }
-
-  .container {
-    padding: 3rem 0.1rem;
   }
 
   .popup {
