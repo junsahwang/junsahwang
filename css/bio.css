@@ -486,7 +486,7 @@ footer {
   
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 398px) {
   .main {
     display: none;
   }

@@ -87,6 +87,7 @@ body {
 }
 
 .grid-item {
+  text-decoration: none;
   text-align: center;
   border: 0.1px solid #4f4f4f;
   box-sizing: border-box;
@@ -99,7 +100,7 @@ body {
 }
 
 .grid-item:hover img {
-  transform: scale(1.02);
+  transform: scale(1.04);
 }
 
 .gridinsides {
@@ -111,8 +112,8 @@ body {
 }
 
 .logo {
-  padding: 15% 0%;
-  height: 8rem;
+  padding: 20% 0%;
+  height: 6rem;
 }
 
 .logo img {
@@ -199,9 +200,9 @@ footer {
     padding: 7vh;
   }
   
-.logo {
-  height: 8rem;
-}
+  .logo {
+    height: 10rem;
+  }
   
   .logoname {
     padding-top: 6%;
@@ -231,16 +232,16 @@ footer {
   }
 
   .grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .gridinsides {
-    padding: 10vh;
+    padding: 5vh;
   }
   
-.logo {
-  height: 8rem;
-}
+  .logo {
+    height: 10rem;
+  }
   
   .logoname {
     padding-top: 6%;
@@ -346,7 +347,17 @@ footer {
   
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 398px) and (max-width: 635px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .logo {
+    padding: 5vh;
+  }
+}
+
+@media screen and (max-width: 398px) {
   .main {
     display: none;
   }
