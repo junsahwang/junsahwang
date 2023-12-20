@@ -141,13 +141,13 @@ footer {
 }
 
 .footermedia a {
-  color: #db2c2c;
+  color: #ea1212;
   font-size: 2rem;
   padding: 2%;
 }
 
 .copyright {
-  color: #db2c2c;
+  color: #ea1212;
   font-size: 1rem;
   padding-top: 5%;
 }
@@ -277,7 +277,7 @@ footer {
 
   .open {
     font-size: 1.5rem;
-    color: #db2c2c;
+    color: #ea1212;
   }
 
   .sidebar2 {
@@ -338,7 +338,7 @@ footer {
   .close {
     padding: 7%;
     font-size: 1.3rem;
-    color: #db2c2c;
+    color: #ea1212;
   }
 
   .footermedia a {
