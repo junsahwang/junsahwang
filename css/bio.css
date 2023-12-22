@@ -106,7 +106,7 @@ body {
 }
 
 .quote {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   width: 60%;
   text-align: left;
   padding: 0;
@@ -115,7 +115,7 @@ body {
 
 .sig {
   width: 40%;
-  font-size: 2.6rem;
+  font-size: 3rem;
   text-align: right;
   font-weight: bold;
   padding: 0;
@@ -146,7 +146,7 @@ body {
 }
 
 .stagewords1 {
-  width: 25%;
+  width: 30%;
   height: 40%;
   text-align: left;
   padding: 0% 5%;
@@ -161,7 +161,7 @@ body {
 }
 
 .stagewords2 {
-  width: 40%;
+  width: 30%;
   height: 40%;
   text-align: right;
   padding: 0% 5%;
