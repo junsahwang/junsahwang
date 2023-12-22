@@ -15,26 +15,38 @@ function openPopup(id) {
   const popup = document.getElementById(`popup-${id}`);
   const overlay = document.getElementById('overlay');
 
-  popup.style.display = 'block';
+  popup.classList.add('active');
   overlay.style.display = 'block';
+
+  setTimeout(() => {
+    overlay.classList.add('active');
+  }, 50); 
 }
 
 function closePopup(id) {
   const popup = document.getElementById(`popup-${id}`);
   const overlay = document.getElementById('overlay');
 
-  popup.style.display = 'none';
-  overlay.style.display = 'none';
+  popup.classList.remove('active');
+  overlay.classList.remove('active');
+
+  setTimeout(() => {
+    overlay.style.display = 'none';
+  }, 300); 
 }
 
 function closeAllPopups() {
   const popups = document.querySelectorAll('.popup');
+  const overlay = document.getElementById('overlay');
 
   popups.forEach(popup => {
-    popup.style.display = 'none';
+    popup.classList.remove('active');
   });
 
-  overlay.style.display = 'none';
+  setTimeout(() => {
+    overlay.style.display = 'none';
+    overlay.classList.remove('active');
+  }, 300);
 }
 /* COOLPOPUP *//* COOLPOPUP *//* COOLPOPUP *//* COOLPOPUP *//* COOLPOPUP *//* COOLPOPUP */
 
