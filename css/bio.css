@@ -128,7 +128,7 @@ body {
   height: 70%;
   justify-content: center;
   align-items: center;
-  padding: 3% 0%;
+  padding: 5% 0%;
 }
 
 .stagecontent1 {
@@ -146,7 +146,7 @@ body {
 }
 
 .stagewords1 {
-  width: 35%;
+  width: 25%;
   height: 40%;
   text-align: left;
   padding: 0% 5%;
@@ -195,8 +195,8 @@ body {
   }
 
   .stageimg {
-    width: 40%;
-    height: 75vh;
+    width: 45%;
+    height: 80vh;
     padding: 0%;
     object-fit: cover;
   }
