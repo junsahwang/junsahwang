@@ -347,17 +347,32 @@ footer {
   
 }
 
-@media screen and (min-width: 398px) and (max-width: 635px) {
+@media screen and (min-width: 314px) and (max-width: 635px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gridinsides {
+    padding: 15%;
+  }
+
+  .logo {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 314px) {
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }
 
   .logo {
-    padding: 5vh;
+    height: 5rem;
   }
 }
 
-@media screen and (max-width: 398px) {
+
+@media screen and (max-width: 250px) {
   .main {
     display: none;
   }
