@@ -60,9 +60,9 @@ hr {
 }
 
 .batman {
-  color: #363636;
+  color: #2b2b2b;
   padding: 22%;
-  padding-top: 10%;
+  padding-top: 0;
 }
 /* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR */
 
@@ -124,7 +124,7 @@ hr {
 }
 
 .box {
-  background-color: #1212127a;
+  background-color: #12121298;
   height: 100%;
 }
 
