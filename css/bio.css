@@ -97,7 +97,7 @@ body {
   display: flex; 
   flex-direction: row; 
   justify-content: space-around;
-  background: linear-gradient(transparent, rgba(2, 2, 2, 0.8));
+  background: linear-gradient(transparent, rgba(2, 2, 2, 1));
   color: #fff;
   padding: 5%;
   position: absolute;
@@ -177,8 +177,10 @@ body {
 .stagewords2b h1,
 .stagewords2 h1, 
 .stagewords1b h1,
-.stagewords1 {
-  padding-bottom: 10%;
+.stagewords1 h1{
+  padding-bottom: 5%;
+  font-weight: bold;
+  font-size: 1.7rem;
   color: #fff;
 }
 
@@ -262,9 +264,30 @@ footer {
     padding: 5%;
   }
 
+  .content {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quote {
+    width: 100%;
+    padding-bottom: 5vh;
+  }
+
+  .sig {
+    font-weight: normal;
+    width: 100%;
+  }
+
   .stageimg {
     width: 100%;
     height: 60vh;
+  }
+
+  .sig {
+    font-weight: normal;
   }
 
   .stage h1 {
@@ -428,8 +451,22 @@ footer {
     font-weight: normal;
   }
 
+  .content {
+    padding: 5%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quote {
+    width: 100%;
+    padding-bottom: 5vh;
+  }
+
   .sig {
     font-weight: normal;
+    width: 100%;
   }
 
   .stagecontent1,
@@ -533,6 +570,10 @@ footer {
 
   .stageimg {
     width: 90%;
+  }
+
+  .sig {
+    font-weight: normal;
   }
 
   .stagewords2 {
