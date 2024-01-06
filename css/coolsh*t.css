@@ -138,8 +138,8 @@ hr {
 
 .title {
   font-weight: bold;
-  font-size: 1.7rem; 
-  bottom: 0vh; 
+  font-size: 1.5rem; 
+  bottom: 0.5vh; 
   left: 5vh; 
   position: absolute;
   color: #fff;
@@ -177,6 +177,7 @@ hr {
 
 .gallery {
   width: 100%;
+  padding-top: 0;
 }
 
 .item {
@@ -212,7 +213,7 @@ hr {
 .item .clmndescl h1 {
   margin: 0;
   padding: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 2;
 }
 
@@ -244,11 +245,23 @@ footer {
 
 /* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA */
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .sidebarinsides {
+    padding: 15%;
+  }
+
+  .batman {
+    padding: 15%;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .sidebar {
     width: 40%;
+  }
+
+  .sidebarinsides {
+    padding: 17%;
+    padding-bottom: 0;
   }
 
   .batman {
@@ -294,6 +307,7 @@ footer {
     font-weight: normal;
     bottom: 1vh; 
     left: 5vh; 
+    font-size: 1.2rem;
   }
 
   .popup {
@@ -333,7 +347,6 @@ footer {
   .batman2 {
     color: #363636;
     padding: 5%;
-    padding-top: 10%;
     font-size: 1rem;
   }
 
@@ -383,6 +396,7 @@ footer {
   .sidebar2 {
     padding: 5%;
     padding-left: 10%;
+    padding-top: 3;
   }
 
   .mediasidebar {
@@ -418,12 +432,12 @@ footer {
   .sidebarinsides2 ul {
     list-style: none;
     padding: 0%;
-    padding-top: 10%;
   }
 
   .sidebarinsides2 ul li {
-    padding-top: 10%;
-    font-size: 1.2rem;
+    padding-top: 4%;
+    padding-top: 5%;
+    font-size: 1rem;
   }
 
   .sidebarinsides2 ul li a{
@@ -468,6 +482,7 @@ footer {
     font-weight: normal; 
     bottom: 1vh; 
     left: 5vh; 
+    font-size: 1.3rem;
   }
 
   .item .descr h1,
@@ -478,6 +493,7 @@ footer {
 
   .close {
     padding: 7%;
+    padding-bottom: 0;
     font-size: 1.3rem;
     color: #ea1212;
   }
@@ -513,9 +529,14 @@ footer {
   .clmndescl {
     display: block;
   }
+  
+  .footermedia {
+    padding-top: 30%;
+  }
 
   .footermedia a {
     padding: 4%;
+    font-size: 1.4rem;
   }
   
 }
@@ -544,7 +565,6 @@ footer {
 
   .myname a {
     font-size: 2.5rem;
-    font-weight: normal;
   }
 
   .sidebarinsides ul {

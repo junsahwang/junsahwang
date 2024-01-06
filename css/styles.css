@@ -123,13 +123,14 @@ body {
 
 .logoname {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding-top: 10%; 
   padding-bottom: 5%;
 }
 
 .desc {
   color: #7f7f7f;
+  font-size: 1rem;
 }
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
 
@@ -155,6 +156,14 @@ footer {
 
 /* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA */
 @media screen and (min-width: 1024px) and (max-width: 1264px) {
+  .sidebarinsides {
+    padding: 15%;
+  }
+
+  .batman {
+    padding: 15%;
+  }
+  
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -163,9 +172,9 @@ footer {
     padding: 7vh;
   }
   
-.logo {
-  height: 8rem;
-}
+  .logo {
+    height: 8rem;
+  }
   
   .logoname {
     padding-top: 6%;
@@ -181,6 +190,15 @@ footer {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .sidebar {
     width: 40%;
+  }
+
+  .sidebarinsides {
+    padding: 17%;
+    padding-bottom: 0;
+  }
+
+  .batman {
+    padding: 15%;
   }
 
   .batman {
@@ -201,7 +219,8 @@ footer {
   }
   
   .logo {
-    height: 10rem;
+    height: 7rem;
+    padding: 10%;
   }
   
   .logoname {
@@ -222,7 +241,6 @@ footer {
   .batman2 {
     color: #363636;
     padding: 5%;
-    padding-top: 10%;
     font-size: 1rem;
   }
 
@@ -240,7 +258,7 @@ footer {
   }
   
   .logo {
-    height: 10rem;
+    height: 100rem;
   }
   
   .logoname {
@@ -283,6 +301,7 @@ footer {
   .sidebar2 {
     padding: 5%;
     padding-left: 10%;
+    padding-top: 3;
   }
 
   .mediasidebar {
@@ -317,12 +336,12 @@ footer {
   .sidebarinsides2 ul {
     list-style: none;
     padding: 0%;
-    padding-top: 10%;
   }
 
   .sidebarinsides2 ul li {
-    padding-top: 10%;
-    font-size: 1.2rem;
+    padding-top: 4%;
+    padding-top: 5%;
+    font-size: 1rem;
   }
 
   .sidebarinsides2 ul li a{
@@ -337,17 +356,23 @@ footer {
 
   .close {
     padding: 7%;
+    padding-bottom: 0;
     font-size: 1.3rem;
     color: #ea1212;
   }
 
+  .footermedia {
+    padding-top: 30%;
+  }
+
   .footermedia a {
     padding: 4%;
+    font-size: 1.4rem;
   }
   
 }
 
-@media screen and (min-width: 314px) and (max-width: 635px) {
+@media screen and (min-width: 314px) and (max-width: 769px) {
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -358,6 +383,15 @@ footer {
 
   .logo {
     padding: 0;
+    height: 7rem;
+  }
+
+  .logoname {
+    font-size: 1.1rem;
+  }
+  
+  .desc {
+    font-size: 1rem;
   }
 }
 
@@ -366,8 +400,22 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .gridinsides{
+    padding: 20%;
+    padding-top: 30%;
+  }
+
   .logo {
+    padding: 0;
     height: 5rem;
+  }
+
+  .logoname {
+    font-size: 1.1rem;
+  }
+  
+  .desc {
+    font-size: 1rem;
   }
 }
 
@@ -391,7 +439,7 @@ footer {
   }
 
   .sidebarinsides {
-  padding: 20%;
+    padding: 20%;
   }
 
   .myname a {

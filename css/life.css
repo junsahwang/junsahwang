@@ -97,7 +97,7 @@ body {
   display: flex; 
   flex-direction: row; 
   justify-content: space-around;
-  background: linear-gradient(transparent, rgba(2, 2, 2, 1));
+  background: linear-gradient(transparent, rgba(2, 2, 5, 100));
   color: #fff;
   padding: 5%;
   position: absolute;
@@ -106,18 +106,9 @@ body {
 }
 
 .quote {
-  font-size: 1.4rem;
-  width: 60%;
+  font-size: 1rem;
+  width: 100%;
   text-align: left;
-  padding: 0;
-  margin: 0;
-}
-
-.sig {
-  width: 40%;
-  font-size: 3rem;
-  text-align: right;
-  font-weight: bold;
   padding: 0;
   margin: 0;
 }
@@ -146,7 +137,7 @@ body {
 }
 
 .stagewords1 {
-  width: 30%;
+  width: 45%;
   height: 40%;
   text-align: left;
   padding: 0% 5%;
@@ -161,7 +152,7 @@ body {
 }
 
 .stagewords2 {
-  width: 30%;
+  width: 40%;
   height: 40%;
   text-align: right;
   padding: 0% 5%;
@@ -180,7 +171,7 @@ body {
 .stagewords1 h1{
   padding-bottom: 5%;
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 2rem;
   color: #fff;
 }
 
@@ -228,7 +219,13 @@ footer {
 
 /* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA */
 @media screen and (min-width: 1024px) and (max-width: 1250px) {
+  .sidebarinsides {
+    padding: 15%;
+  }
 
+  .batman {
+    padding: 15%;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -236,8 +233,13 @@ footer {
     width: 40%;
   }
 
+  .sidebarinsides {
+    padding: 17%;
+    padding-bottom: 0;
+  }
+
   .batman {
-    padding-top: 10%;
+    padding: 15%;
   }
 
   .main {
@@ -273,21 +275,12 @@ footer {
 
   .quote {
     width: 100%;
-    padding-bottom: 5vh;
-  }
-
-  .sig {
-    font-weight: normal;
-    width: 100%;
+    font-size: 1rem;
   }
 
   .stageimg {
     width: 100%;
     height: 60vh;
-  }
-
-  .sig {
-    font-weight: normal;
   }
 
   .stage h1 {
@@ -330,10 +323,13 @@ footer {
     display: none;
   }
 
+  .sidebarinsides {
+    padding: 15%;
+  }
+
   .batman2 {
     color: #363636;
     padding: 5%;
-    padding-top: 10%;
     font-size: 1rem;
   }
 
@@ -388,6 +384,7 @@ footer {
   .sidebar2 {
     padding: 5%;
     padding-left: 10%;
+    padding-top: 3;
   }
 
   .mediasidebar {
@@ -423,12 +420,12 @@ footer {
   .sidebarinsides2 ul {
     list-style: none;
     padding: 0%;
-    padding-top: 10%;
   }
 
   .sidebarinsides2 ul li {
-    padding-top: 10%;
-    font-size: 1.2rem;
+    padding-top: 4%;
+    padding-top: 5%;
+    font-size: 1rem;
   }
 
   .sidebarinsides2 ul li a{
@@ -443,6 +440,7 @@ footer {
 
   .close {
     padding: 7%;
+    padding-bottom: 0;
     font-size: 1.3rem;
     color: #ea1212;
   }
@@ -453,7 +451,7 @@ footer {
 
   .content {
     padding: 5%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -461,12 +459,7 @@ footer {
 
   .quote {
     width: 100%;
-    padding-bottom: 5vh;
-  }
-
-  .sig {
-    font-weight: normal;
-    width: 100%;
+    font-size: 1rem;
   }
 
   .stagecontent1,
@@ -518,8 +511,13 @@ footer {
     display: block;
   }
 
+  .footermedia {
+    padding-top: 30%;
+  }
+
   .footermedia a {
     padding: 4%;
+    font-size: 1.4rem;
   }
   
 }
@@ -543,7 +541,7 @@ footer {
   }
 
   .sidebarinsides {
-  padding: 20%;
+    padding: 15%;
   }
 
   .myname a {
@@ -570,10 +568,6 @@ footer {
 
   .stageimg {
     width: 90%;
-  }
-
-  .sig {
-    font-weight: normal;
   }
 
   .stagewords2 {
