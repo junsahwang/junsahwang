@@ -70,138 +70,22 @@ body {
 .mediasidebar {
   display: none;
 }
+
+/* Rest of your styles */
+
 /*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*/
 
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
 .main {
   width: 70%;
   margin-left: 30%;
-  z-index: 0;
 }
-
-.banner {
-  height: 65vh;
-  display: flex;
-  flex-direction: column; 
-  justify-content: flex-end;
-  align-items: center;
-  padding-bottom: 5%;
-}
-
-.bannerimg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.content {
-  display: flex; 
-  flex-direction: row; 
-  justify-content: space-around;
-  background: linear-gradient(transparent, rgba(2, 2, 5, 100));
-  color: #fff;
-  padding: 5%;
-  position: absolute;
-  text-align: center; 
-  z-index: 1;
-}
-
-.quote {
-  font-size: 1rem;
-  width: 100%;
-  text-align: left;
-  padding: 0;
-  margin: 0;
-}
-
-.stage {
-  background-color: #00000000;
-  color: #fff;
-  height: 70%;
-  justify-content: center;
-  align-items: center;
-  padding: 5% 0%;
-}
-
-.stagecontent1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  padding: 0% 0%;
-}
-
-.stagecontent2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  padding: 0% 0%;
-}
-
-.stagewords1 {
-  width: 45%;
-  height: 40%;
-  text-align: left;
-  padding: 0% 5%;
-}
-
-.stagewords1b {
-  width: 35%;
-  height: 40%;
-  text-align: left;
-  padding: 0% 5%;
-  display: none;
-}
-
-.stagewords2 {
-  width: 40%;
-  height: 40%;
-  text-align: right;
-  padding: 0% 5%;
-}
-
-.stagewords2b {
-  width: 60%;
-  height: 30vh;
-  display: none;
-  padding: 5% 5%;
-}
-
-.stagewords2b h1,
-.stagewords2 h1, 
-.stagewords1b h1,
-.stagewords1 h1{
-  padding-bottom: 5%;
-  font-weight: bold;
-  font-size: 2rem;
-  color: #fff;
-}
-
-  .stagewords2b h1,
-  .stagewords2 h1, 
-  .stagewords1b h1,
-  .stagewords1 h1,
-  .stagewords2b p,
-  .stagewords2 p, 
-  .stagewords1b p,
-  .stagewords1 p {
-    margin: 0;
-    line-height: 2;
-  }
-
-  .stageimg {
-    width: 45%;
-    height: 80vh;
-    padding: 0%;
-    object-fit: cover;
-  }
-
-
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
 
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 footer {
   text-align: center;
-  padding: 10%;
+  padding: 5%;
   justify-content: center;
 }
 
@@ -233,7 +117,7 @@ footer {
   .sidebar {
     width: 40%;
   }
-
+  
   .sidebarinsides {
     padding: 17%;
     padding-bottom: 0;
@@ -247,85 +131,11 @@ footer {
     width: 60%;
     margin-left: 40%;
   }
-
-  .logo {
-    font-size: 15vh;
-    padding: 4%;
-  }
-  
-  .logoname {
-    padding-top: 6%;
-    font-size: 4vh;
-  }
-  
-  .desc {
-    padding: 5%;
-    font-size: 3vh;
-  }
-
-  .stage {
-    padding: 5%;
-  }
-
-  .content {
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .quote {
-    width: 100%;
-    font-size: 1rem;
-  }
-
-  .stageimg {
-    width: 100%;
-    height: 60vh;
-  }
-
-  .stage h1 {
-    font-weight: normal;
-  }
-
-  .stagecontent1,
-  .stagecontent2 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .stagewords1,
-  .stagewords1b,
-  .stagewords2,
-  .stagewords2b {
-    width: 100%;
-    padding: 5% 0%;
-  }
-
-  .stagewords2 {
-    display: block;
-  }
-
-  .stagewords2b {
-    display: none;
-  }
-
-  .stagewords1 {
-    display: none;
-  }
-
-  .stagewords1b {
-    display: block;
-  }
 }
 
 @media screen and (max-width: 769px) {
   .sidebar {
     display: none;
-  }
-
-  .sidebarinsides {
-    padding: 15%;
   }
 
   .batman2 {
@@ -338,20 +148,11 @@ footer {
     width: 100%;
     margin-left: 0;
   }
-  
-  .logo {
-    font-size: 15vh;
-    padding: 4%;
-  }
-  
-  .logoname {
-    padding-top: 6%;
-    font-size: 4vh;
-  }
-  
-  .desc {
-    padding: 5%;
-    font-size: 3vh;
+
+  .jokeform iframe {
+    width: 98%;
+    height: 100vh;
+    padding: 1%;
   }
 
   .topbar {
@@ -398,7 +199,6 @@ footer {
     background-color: #111;
     color: #fff;
     transition: left 0.3s ease; 
-    z-index: 99;
   }
 
   .myname2 {
@@ -445,74 +245,8 @@ footer {
     color: #ea1212;
   }
 
-  .stage h1 {
-    font-weight: normal;
-  }
-
-  .content {
-    padding: 5%;
-    padding-bottom: 5%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .quote {
-    width: 100%;
-    font-size: 1rem;
-  }
-
-  .stagecontent1,
-  .stagecontent2 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .stage {
-    padding: 5%;
-  }
-
-  .stageimg {
-    width: 100%;
-    height: 60vh;
-  }
-
-  .stage h1 {
-    font-weight: normal;
-  }
-
-  .stagecontent1,
-  .stagecontent2 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .stagewords1,
-  .stagewords1b,
-  .stagewords2,
-  .stagewords2b {
-    width: 100%;
-    padding: 5% 0%;
-  }
-
-  .stagewords2 {
-    display: block;
-  }
-
-  .stagewords2b {
-    display: none;
-  }
-
-  .stagewords1 {
-    display: none;
-  }
-
-  .stagewords1b {
-    display: block;
-  }
-
   .footermedia {
-    padding-top: 30%;
+    padding-top: 0%;
   }
 
   .footermedia a {
@@ -541,7 +275,7 @@ footer {
   }
 
   .sidebarinsides {
-    padding: 15%;
+  padding: 20%;
   }
 
   .myname a {
@@ -555,27 +289,6 @@ footer {
 
   .sidebar2 {
     display: none;
-  }
-
-  .stage h1 {
-    font-weight: normal;
-  }
-
-  .stagecontent1,
-  .stagecontent2 {
-    flex-direction: column;
-  }
-
-  .stageimg {
-    width: 90%;
-  }
-
-  .stagewords2 {
-    display: none;
-  }
-
-  .stagewords2b {
-    display: block;
   }
 }
 /* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA */

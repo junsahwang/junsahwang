@@ -24,6 +24,7 @@ hr {
 
 .sidebarinsides {
   padding: 22%;
+  padding-right: 10%;
 }
 
 .myname a {
@@ -40,7 +41,7 @@ hr {
 }
 
 .sidebar ul li {
-  padding-top: 7%;
+  padding-top: 9%;
 }
 
 .sidebar ul li a {
@@ -434,9 +435,8 @@ footer {
   }
 
   .sidebarinsides2 ul li {
-    padding-top: 4%;
-    padding-top: 5%;
-    font-size: 1rem;
+    padding-top: 9%;
+    font-size: 1.3rem;
   }
 
   .sidebarinsides2 ul li a{
