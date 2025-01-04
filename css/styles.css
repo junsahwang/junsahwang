@@ -82,16 +82,24 @@ body {
 
 .grid {
   display: grid;
+  padding: 1%;
   grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
 .grid-item {
   text-decoration: none;
   text-align: center;
-  border: 0.1px solid #4e4e4e;
+  background-color: #4a4a4a; 
   box-sizing: border-box;
   overflow: hidden;
   cursor: pointer;
+  border-radius: 1rem;
+  transition: transform 0.5s ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.02); 
 }
 
 .gridinsides {
@@ -193,6 +201,7 @@ footer {
   }
 
   .grid {
+    padding: 3%;
     grid-template-columns: repeat(1, 1fr);
   }
   
@@ -218,7 +227,9 @@ footer {
   }
 
   .grid {
+    padding: 3%;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
   .topbar {
@@ -344,6 +355,7 @@ footer {
 
 @media screen and (min-width: 250px) and (max-width: 314px) {
   .grid {
+    padding: 4%;
     grid-template-columns: repeat(1, 1fr);
   }
 
