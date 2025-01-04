@@ -260,6 +260,10 @@ footer {
     color: #ea1212;
   }
 
+  .open:hover {
+    cursor: pointer;
+  }
+
   .sidebar2 {
     padding: 5%;
     padding-left: 10%;
@@ -322,6 +326,10 @@ footer {
     font-size: 1.3rem;
     color: #ea1212;
     z-index: 1000; 
+  }
+
+  .close:hover {
+    cursor: pointer;
   }
 
   .footermedia {
