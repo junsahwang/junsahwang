@@ -19,8 +19,7 @@ body {
 }
 
 .sidebarinsides {
-  padding: 22%;
-  padding-right: 10%;
+  padding: 15%;
 }
 
 .myname a {
@@ -58,8 +57,7 @@ body {
 
 .batman {
   color: #2b2b2b;
-  padding: 22%;
-  padding-top: 0;
+  padding: 15%;
 }
 /* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR */
 
@@ -80,10 +78,18 @@ body {
   width: 70%;
   margin-left: 30%;
 }
+
 .fnd {
   text-align: center;
-  padding-top: 30%;
-  padding-bottom: 20%;
+  padding: 10%;
+}
+
+.beggaremoji {
+  width: 30vw;
+  height: auto; 
+  display: block; 
+  margin: 0 auto;
+  padding: 10%;
 }
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
 
@@ -115,6 +121,20 @@ footer {
 
   .batman {
     padding: 15%;
+  }
+
+  .main {
+    width: 70%;
+    margin-left: 30%;
+  }
+  
+  .fnd {
+    text-align: center;
+    padding: 10%;
+  }
+  
+  .beggaremoji {
+    width: 40vw;
   }
 }
 
@@ -249,14 +269,28 @@ footer {
     font-size: 1.3rem;
     color: #ea1212;
   }
+  
+  .main {
+    height: 100%;
+  }
+
+  .fnd {
+    padding: 20%;
+    font-size: 1.3rem;
+  }
+  
+  .beggaremoji {
+    width: 50vw;
+  }
 
   .footermedia {
+    bottom: 0%;
     padding-top: 0%;
   }
 
   .footermedia a {
     padding: 4%;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   
 }
@@ -285,6 +319,15 @@ footer {
 
   .myname a {
     font-size: 2.5rem;
+  }
+
+    
+  .fnd {
+    padding: 20%;
+  }
+  
+  .beggaremoji {
+    width: 50vw;
   }
 
   .sidebarinsides ul {
