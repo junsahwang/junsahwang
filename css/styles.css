@@ -360,6 +360,7 @@ footer {
     padding-bottom: 0;
     font-size: 1.3rem;
     color: #ea1212;
+    z-index: 1000; 
   }
 
   .footermedia {
