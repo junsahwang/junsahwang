@@ -88,48 +88,47 @@ body {
 .grid-item {
   text-decoration: none;
   text-align: center;
-  border: 0.1px solid #4f4f4f;
+  border: 0.1px solid #4e4e4e;
   box-sizing: border-box;
   overflow: hidden;
   cursor: pointer;
 }
 
-.grid-item img {
-  transition: transform 0.3s ease;
-}
-
-.grid-item:hover img {
-  transform: scale(1.05);
-}
-
 .gridinsides {
-  padding: 18%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .logo {
-  padding: 20% 0%;
-  height: 6rem;
+  width: 100%;
+  filter: grayscale(20%) brightness(70%); 
+  transition: filter 0.5s ease;
+  height: 25rem;
+  object-fit: cover;
 }
 
-.logo img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
+.logo:hover {
+  filter: none; 
+}
+
+.words {
+  width: 90%; 
+  padding: 5%; 
+  text-align: left;
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-start; 
 }
 
 .logoname {
   color: #fff;
   font-size: 1.2rem;
-  padding-top: 10%; 
   padding-bottom: 5%;
 }
 
 .desc {
-  color: #7f7f7f;
+  color: #a3a3a3;
   font-size: 1rem;
 }
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
@@ -168,23 +167,6 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .gridinsides {
-    padding: 7vh;
-  }
-  
-  .logo {
-    height: 8rem;
-  }
-  
-  .logoname {
-    padding-top: 6%;
-  }
-  
-  .desc {
-    padding: 5%;
-    font-size: 2.5vh;
-  }
-
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -213,23 +195,9 @@ footer {
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }
-
-  .gridinsides {
-    padding: 7vh;
-  }
   
   .logo {
-    height: 7rem;
-    padding: 10%;
-  }
-  
-  .logoname {
-    padding-top: 6%;
-  }
-  
-  .desc {
-    padding: 5%;
-    font-size: 3vh;
+    height: 25rem;
   }
 }
 
@@ -251,23 +219,6 @@ footer {
 
   .grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .gridinsides {
-    padding: 5vh;
-  }
-  
-  .logo {
-    height: 100rem;
-  }
-  
-  .logoname {
-    padding-top: 6%;
-  }
-  
-  .desc {
-    padding: 5%;
-    font-size: 1.3rem;
   }
 
   .topbar {
@@ -377,13 +328,8 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .gridinsides {
-    padding: 15%;
-  }
-
   .logo {
-    padding: 0;
-    height: 7rem;
+    height: 30rem;
   }
 
   .logoname {
@@ -400,23 +346,14 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .gridinsides{
-    padding: 20%;
-    padding-top: 30%;
-  }
-
   .logo {
-    padding: 0;
-    height: 5rem;
+    height: 25rem;
   }
 
   .logoname {
     font-size: 1.1rem;
   }
   
-  .desc {
-    font-size: 1rem;
-  }
 }
 
 
