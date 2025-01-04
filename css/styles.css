@@ -116,7 +116,7 @@ body {
   object-fit: cover;
 }
 
-.gridimage:hover {
+.grid-item:hover .gridimage {
   filter: none; 
 }
 
