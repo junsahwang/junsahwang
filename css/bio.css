@@ -199,6 +199,14 @@ body {
     line-height: 2;
   }
 
+  .stagewords2b p,
+  .stagewords2 p, 
+  .stagewords1b p,
+  .stagewords1 p {
+    font-size: 1.1rem;
+    line-height: 2; 
+  }
+
   .stageimg {
     width: 45%;
     height: 80vh;

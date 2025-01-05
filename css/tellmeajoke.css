@@ -80,7 +80,7 @@ body {
 }
 
 .jokeform {
-  height: 110vh;
+  height: 90vh;
   padding: 5%;
 }
 
@@ -161,7 +161,6 @@ footer {
 
   .jokeform iframe {
     width: 98%;
-    height: 100vh;
     padding: 1%;
   }
 
