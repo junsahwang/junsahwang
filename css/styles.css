@@ -332,6 +332,10 @@ footer {
     cursor: pointer;
   }
 
+  .gridimage {
+    filter: none;
+  }
+
   .footermedia {
     padding-top: 30%;
   }
