@@ -155,14 +155,6 @@ body {
   padding: 0% 5%;
 }
 
-.stagewords1b {
-  width: 35%;
-  height: 40%;
-  text-align: left;
-  padding: 0% 5%;
-  display: none;
-}
-
 .stagewords2 {
   width: 40%;
   height: 40%;
@@ -170,16 +162,7 @@ body {
   padding: 0% 5%;
 }
 
-.stagewords2b {
-  width: 60%;
-  height: 30vh;
-  display: none;
-  padding: 5% 5%;
-}
-
-.stagewords2b h1,
 .stagewords2 h1, 
-.stagewords1b h1,
 .stagewords1 h1{
   padding-bottom: 5%;
   font-weight: bold;
@@ -187,27 +170,36 @@ body {
   color: #fff;
 }
 
-  .stagewords2b h1,
   .stagewords2 h1, 
-  .stagewords1b h1,
   .stagewords1 h1,
-  .stagewords2b p,
   .stagewords2 p, 
-  .stagewords1b p,
   .stagewords1 p {
     margin: 0;
     line-height: 2;
   }
 
-  .stagewords2b p,
   .stagewords2 p, 
-  .stagewords1b p,
   .stagewords1 p {
     font-size: 1.1rem;
     line-height: 2; 
   }
 
   .stageimg {
+    width: 45%;
+    height: 80vh;
+    padding: 0%;
+    object-fit: cover;
+  }
+
+  .stageimg1 {
+    width: 45%;
+    height: 80vh;
+    padding: 0%;
+    object-fit: cover;
+  }
+
+  .stageimgmobile {
+    display: none;
     width: 45%;
     height: 80vh;
     padding: 0%;
@@ -325,27 +317,29 @@ footer {
   }
 
   .stagewords1,
-  .stagewords1b,
-  .stagewords2,
-  .stagewords2b {
+  .stagewords2 {
     width: 100%;
     padding: 5% 0%;
   }
 
   .stagewords2 {
     display: block;
-  }
-
-  .stagewords2b {
-    display: none;
-  }
+  } 
 
   .stagewords1 {
+    display: block;
+  }
+
+  .stageimg1 {
     display: none;
   }
 
-  .stagewords1b {
+  .stageimgmobile {
     display: block;
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    object-fit: cover;
   }
 }
 
@@ -543,6 +537,18 @@ footer {
     height: 60vh;
   }
 
+  .stageimg1 {
+    display: none;
+  }
+
+  .stageimgmobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    object-fit: cover;
+  }
+
   .stage h1 {
     font-weight: normal;
   }
@@ -554,9 +560,7 @@ footer {
   }
 
   .stagewords1,
-  .stagewords1b,
-  .stagewords2,
-  .stagewords2b {
+  .stagewords2 {
     width: 100%;
     padding: 5% 0%;
   }
@@ -565,20 +569,12 @@ footer {
     display: block;
   }
 
-  .stagewords2b {
-    display: none;
-  }
-
   .stagewords1 {
-    display: none;
-  }
-
-  .stagewords1b {
     display: block;
   }
 
   .footermedia {
-    padding-top: 30%;
+    padding-top: 0%;
   }
 
   .footermedia a {
@@ -687,10 +683,6 @@ footer {
   }
 
   .stagewords2 {
-    display: none;
-  }
-
-  .stagewords2b {
     display: block;
   }
 }
