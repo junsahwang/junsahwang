@@ -11,23 +11,20 @@ function closeMediasidebar() {
 //mobile scroll -> topbar
 let lastScroll = 0;
 const topbar = document.getElementById('topbar');
+const threshold = 10; 
 
-// Set initial visibility when the page loads
 document.addEventListener('DOMContentLoaded', () => {
-  if (window.scrollY === 0) {
-    topbar.classList.remove('hidden'); // Show topbar at page start
+  if (window.scrollY <= threshold) {
+    topbar.classList.remove('hidden'); 
   }
 });
-
 window.addEventListener('scroll', () => {
   const currentScroll = window.scrollY;
-
-  if (currentScroll > lastScroll) {
+  if (currentScroll > lastScroll && currentScroll > threshold) {
     topbar.classList.add('hidden'); // Hide when scrolling down
-  } else if (currentScroll < lastScroll) {
-    topbar.classList.remove('hidden'); // Show when scrolling up
+  } else if (currentScroll < lastScroll || currentScroll <= threshold) {
+    topbar.classList.remove('hidden'); // Show when scrolling up or near the top
   }
-
   lastScroll = currentScroll;
 });
 
