@@ -238,12 +238,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 3% 5% 3% 7%;
-    transition: top 0.3s ease; 
-    top: -100px;
-  }
-
-  .topbar.visible {
-    top: 0; /* Slide into view */
   }
 
   .topbar2 {
