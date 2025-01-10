@@ -3,10 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="0; url=tellmeajoke">
-  <title>Redirecting...</title>
+  <meta name="description" content="i am hwanglander">
+  <title>Junsa Hwang | Tell Me A Joke </title>
+  <link rel="icon" href="imgs/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/tellmeajoke.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-  <p>If you are not redirected, <a href="tellmeajoke">click here</a>.</p>
+<!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR -->
+<div class="sidebar">
+  <div class="sidebarinsides">
+    <div class="myname">
+      <a href="index.html">JUNSA HWANG</a>
+    </div>
+    <ul>
+      <li><a href="index.html">PROJECTS</a></li>
+      <li><a href="bio.html">JUNSA'S BIO</a></li>   
+      <li><a href="foundation.html">JUNSA HWANG FOUNDATION</a></li>
+      <li><a href="tellmeajoke.html" class="active">TELL ME A JOKE</a></li>
+    </ul>
+    <a href="#" style="text-decoration: none; color: inherit;" onclick="showPopup(event)">
+      <p class="hwanglander">(I am hwanglander)</p>
+    </a>
+    <div class="overlay" onclick="hidePopup()"></div>
+    <div class="popup-image">
+        <img src="imgs/hwanglander.png" alt="Popup" style="max-width: 100%; max-height: 70vh;">
+    </div>
+    <audio id="popupAudio" src="audios/icandoanything.mp3" preload="auto"></audio>
+  </div>
+</div>
+<!--SIDEBAR--><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR -->
+
+<!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar2">
+    <div class="open" onclick="openMediasidebar()">
+      <i class="fas fa-bars"></i> 
+    </div>
+    <a href="index.html" class="brand">JUNSA<br>HWANG</a>
+  </div>
+</div>
+
+<!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR -->
+<div class="mediasidebar" id="mediasidebar">
+  <div class="close" onclick="closeMediasidebar()">
+    <i class="fas fa-arrow-left"></i> 
+  </div>
+  <div class="sidebar2">
+    <div class="sidebarinsides2">
+      <div class="myname2">
+        <a href="index.html">JUNSA<br>HWANG</a>
+      </div>
+      <ul>
+        <li><a href="index.html">PROJECTS</a></li>
+        <li><a href="bio.html">JUNSA'S BIO</a></li> 
+        <li><a href="foundation.html">JUNSA HWANG FOUNDATION</a></li>  
+        <li><a href="tellmeajoke.html" class="active">TELL ME A JOKE</a></li>  
+      </ul>
+      <a href="#" style="text-decoration: none; color: inherit;" onclick="showPopup2(event)">
+        <p class="hwanglander2">(I am hwanglander)</p>
+      </a>
+      <div class="overlay2" onclick="hidePopup2()"></div>
+      <div class="popup-image2">
+          <img src="imgs/hwanglander.png" alt="Popup" style="max-width: 100%; max-height: 30vh;">
+      </div>
+      <audio id="popupAudio2" src="audios/icandoanything.mp3" preload="auto"></audio>
+    </div>
+  </div>
+</div>
+<!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR -->
+<!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR -->
+
+<!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN -->
+<div class="main">
+  <div class="jokeform">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd7aZQMLSV_h-K0yDeBQywVLyqJmn-HgFwrJY4Ac4AnqIb6jw/viewform?embedded=true">Loading…</iframe>
+  </div>
+<!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER -->
+  <footer>
+    <div class="footermedia">
+      <a href="https://www.instagram.com/junsahwang/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/junsa.hwang/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/junsa-hwang-218805213/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="copyright">
+      &copy; 2025 JUNSA HWANG
+    </div>
+  </footer>
+<!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER -->
+</div>
+<!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN -->
+
+<script src="app.js"></script>
 </body>
 </html>
+

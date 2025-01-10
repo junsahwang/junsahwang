@@ -3,10 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="0; url=bio">
-  <title>Redirecting...</title>
+  <meta name="description" content="i am hwanglander">
+  <title>Junsa Hwang | Bio</title>
+  <link rel="icon" href="imgs/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/bio.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-  <p>If you are not redirected, <a href="bio">click here</a>.</p>
+<!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR -->
+<div class="sidebar">
+  <div class="sidebarinsides">
+    <div class="myname">
+      <a href="index.html">JUNSA HWANG</a>
+    </div>
+    <ul>
+      <li><a href="index.html">PROJECTS</a></li>
+      <li><a href="bio.html" class="active">JUNSA'S BIO</a></li>   
+      <li><a href="foundation.html">JUNSA HWANG FOUNDATION</a></li>
+      <li><a href="tellmeajoke.html">TELL ME A JOKE</a></li>
+    </ul>
+    <a href="#" style="text-decoration: none; color: inherit;" onclick="showPopup(event)">
+      <p class="hwanglander">(I am hwanglander)</p>
+    </a>
+    <div class="overlay" onclick="hidePopup()"></div>
+    <div class="popup-image">
+        <img src="imgs/hwanglander.png" alt="Popup" style="max-width: 100%; max-height: 80vh;">
+    </div>
+    <audio id="popupAudio" src="audios/icandoanything.mp3" preload="auto"></audio>
+  </div>
+</div>
+<!--SIDEBAR--><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR -->
+
+<!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar2">
+    <div class="open" onclick="openMediasidebar()">
+      <i class="fas fa-bars"></i> 
+    </div>
+    <a href="index.html" class="brand">JUNSA<br>HWANG</a>
+  </div>
+</div>
+
+<!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR -->
+<div class="mediasidebar" id="mediasidebar">
+  <div class="close" onclick="closeMediasidebar()">
+    <i class="fas fa-arrow-left"></i> 
+  </div>
+  <div class="sidebar2">
+    <div class="sidebarinsides2">
+      <div class="myname2">
+        <a href="index.html">JUNSA<br>HWANG</a>
+      </div>
+      <ul>
+        <li><a href="index.html">PROJECTS</a></li>
+        <li><a href="bio.html"  class="active">JUNSA'S BIO</a></li> 
+        <li><a href="foundation.html">JUNSA HWANG FOUNDATION</a></li>  
+        <li><a href="tellmeajoke.html">TELL ME A JOKE</a></li>  
+      </ul>
+      <a href="#" style="text-decoration: none; color: inherit;" onclick="showPopup2(event)">
+        <p class="hwanglander2">(I am hwanglander)</p>
+      </a>
+      <div class="overlay2" onclick="hidePopup2()"></div>
+      <div class="popup-image2">
+          <img src="imgs/hwanglander.png" alt="Popup" style="max-width: 100%; max-height: 80vh;">
+      </div>
+      <audio id="popupAudio2" src="audios/icandoanything.mp3" preload="auto"></audio>
+    </div>
+  </div>
+</div>
+<!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR -->
+<!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR -->
+
+<!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN -->
+<div class="main">
+  <div class="banner">
+    <img class="bannerimg" src="imgs/bio/bio1.png" alt="bio1" loading="lazy">
+    <div class="content">
+      <div class="contentinside">
+        <p class="quote">"Slow motion is better than no motion."</p>
+        <img class="signature" src="imgs/bio/signature.png" alt="Signature" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="stagecontent2">
+      <div class="stagewords2">
+        <h1>
+          ABOUT ME
+        </h1>
+        <p>
+          Hi! I'm Junsa, a student at Boston University studying <span style="color: #ea1212;">Mechanical Engineering.</span> <br> <br> Currently, I have a basic understanding of some coding languages including <span style="color: #ea1212;">HTML , CSS, and JS.</span> When I was a freshman in high school, I also worked on several robotics projects, where I used wireless controls such as flex sensors and accelerometers along with basic <span style="color: #ea1212;">C++.</span> <br> <br> Some other things I enjoy doing are playing tennis as I'm on the <span style="color: #ea1212;">BU Men's Club Tennis Team (go terriers), </span>as well as playing the <span style="color: #ea1212;">violin,</span> which I've played since age six.
+        </p>
+      </div>
+      <img class="stageimg" src="imgs/bio/bio2.png" alt="bio2" loading="lazy">
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="stagecontent1">
+      <img class="stageimg1" src="imgs/bio/bio3.png" alt="bio3" loading="lazy">
+      <div class="stagewords1">
+        <h1>
+          WHAT AM I DOING NOW
+        </h1>
+        <p>
+          As of late, I'm learning more about the <span style="color: #ea1212;">fundamentals used in mechanical engineering projects</span> such as material science, thermodynamics, and other engineering mechanics. Additionally, I would like to start some projects and intern at companies that would involve <span style="color: #ea1212;">CAD </span> and control systems. <br> <br> In the long term, I hope to create and build something that benefits society, solving real-world challenges and improving lives. <span style="color: #ea1212;">My goal is to create solutions that contribute to society,</span> whether through advancements in technology, infrastructure, or environmental conservation.
+        </p>
+      </div>
+      <img class="stageimgmobile" src="imgs/bio/bio3.png" alt="bio3" loading="lazy">
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="stagecontent2">
+      <div class="stagewords2">
+        <h1>
+          OTHER SKILLS
+        </h1>
+        <p>
+          Brawl Stars - add me (hwanglander)
+        </p>
+      </div>
+      <video class="stagevid" autoplay muted playsinline>
+        <source src="imgs/bio/bio4.mp4" type="video/mp4" loading="lazy">
+        Your browser does not support the video tag.
+      </video>      
+    </div>
+  </div>
+<!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER -->
+<footer>
+  <div class="footermedia">
+    <a href="https://www.instagram.com/junsahwang/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/junsa.hwang/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.linkedin.com/in/junsa-hwang-218805213/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="copyright">
+    &copy; 2025 JUNSA HWANG
+  </div>
+</footer>
+<!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER -->
+</div>
+<!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN -->
+
+<script src="app.js"></script>
 </body>
 </html>
+
