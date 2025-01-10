@@ -203,6 +203,7 @@ footer {
   .main {
     width: 60%;
     margin-left: 40%;
+
   }
 
   .grid {
@@ -223,6 +224,7 @@ footer {
   .main {
     width: 100%;
     margin-left: 0;
+    padding-top: 6rem;
   }
 
   .grid {
@@ -235,13 +237,24 @@ footer {
     display: flex;
     background-color: #111;
     color: #ffff;
-    justify-content: space-between;
     align-items: center;
-    padding: 3% 5% 3% 7%;
-  }
 
+  }
+  .topbar {
+    position: fixed;
+    width: 100%;
+    height: 6rem;
+    z-index: 10;
+    transition: transform 0.3s ease;
+  }
+  
+  .topbar.hidden {
+    transform: translateY(-100%);
+  }
+  
   .topbar2 {
     width: 100%;
+    padding: 5%;
     display: flex; 
     justify-content: space-between; 
     align-items: center;
@@ -270,10 +283,10 @@ footer {
     left: -100%; 
     width: 100%;
     height: 100vh;
-    z-index: 10;  
     background-color: #111;
     color: #fff;
     transition: left 0.3s ease; 
+    z-index: 10;  
   }
 
   .popup-image2 {
@@ -368,6 +381,7 @@ footer {
 }
 
 @media screen and (min-width: 314px) and (max-width: 769px) {
+
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }

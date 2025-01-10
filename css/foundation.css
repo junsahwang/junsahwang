@@ -196,6 +196,7 @@ footer {
   .main {
     width: 100%;
     margin-left: 0;
+    padding-top: 6rem;
   }
 
   .jokeform iframe {
@@ -208,13 +209,24 @@ footer {
     display: flex;
     background-color: #111;
     color: #ffff;
-    justify-content: space-between;
     align-items: center;
-    padding: 3% 5% 3% 7%;
-  }
 
+  }
+  .topbar {
+    position: fixed;
+    width: 100%;
+    height: 6rem;
+    z-index: 10;
+    transition: transform 0.3s ease;
+  }
+  
+  .topbar.hidden {
+    transform: translateY(-100%);
+  }
+  
   .topbar2 {
     width: 100%;
+    padding: 5%;
     display: flex; 
     justify-content: space-between; 
     align-items: center;
@@ -251,7 +263,8 @@ footer {
     height: 100vh; 
     background-color: #111;
     color: #fff;
-    transition: left 0.3s ease; 
+    transition: left 0.3s ease;
+    z-index: 10; 
   }
 
   .popup-image2 {
