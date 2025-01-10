@@ -1,4 +1,3 @@
-
 function openMediasidebar() {
   const mediaSidebar = document.getElementById('mediasidebar');
   mediaSidebar.style.left = '0';  
