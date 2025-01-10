@@ -144,6 +144,10 @@ footer {
 
   .jokeform {
     height: 110vh;
+    padding: 0%;
+  }
+  .jokeform iframe {
+    width: 100%;
   }
 }
 
@@ -165,11 +169,11 @@ footer {
 
   .jokeform {
     height: 100vh;
+    padding: 0%;
   }
 
   .jokeform iframe {
-    width: 98%;
-    padding: 1%;
+    width: 100%;
   }
 
   .topbar {
@@ -276,24 +280,28 @@ footer {
 @media screen and (max-width: 640px) {
   .jokeform {
     height: 110vh;
+    padding: 0%;
   }
 }
 
 @media screen and (max-width: 450px) {
   .jokeform {
     height: 110vh;
+    padding: 0%;
   }
 }
 
 @media screen and (max-width: 397px) {
   .jokeform {
     height: 125vh;
+    padding: 0%;
   }
 }
 
 @media screen and (max-width: 365px) {
   .jokeform {
     height: 135vh;
+    padding: 0%;
   }
 }
 
