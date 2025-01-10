@@ -12,15 +12,25 @@ function closeMediasidebar() {
 let lastScroll = 0;
 const topbar = document.getElementById('topbar');
 
+// Set initial visibility when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.scrollY === 0) {
+    topbar.classList.remove('hidden'); // Show topbar at page start
+  }
+});
+
 window.addEventListener('scroll', () => {
   const currentScroll = window.scrollY;
+
   if (currentScroll > lastScroll) {
-    topbar.classList.add('hidden');
+    topbar.classList.add('hidden'); // Hide when scrolling down
   } else if (currentScroll < lastScroll) {
-    topbar.classList.remove('hidden');
+    topbar.classList.remove('hidden'); // Show when scrolling up
   }
+
   lastScroll = currentScroll;
 });
+
 
 //popup hwanglander
 function showPopup(event) {
