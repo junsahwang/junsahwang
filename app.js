@@ -8,6 +8,20 @@ function closeMediasidebar() {
   mediaSidebar.style.left = '-100%';  
 }
 
+//brawl stars
+const video = document.querySelector('.stagevid');
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.play();
+    } else {
+      entry.target.pause();
+    }
+  });
+}, { threshold: 0.5 }); 
+observer.observe(video);
+
+
 //popup hwanglander
 function showPopup(event) {
   event.preventDefault();
