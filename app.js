@@ -8,6 +8,25 @@ function closeMediasidebar() {
   mediaSidebar.style.left = '-100%';  
 }
 
+//mobile scroll -> topbar
+let lastScrollY = window.scrollY;
+const topbar = document.getElementById('topbar');
+
+window.addEventListener('scroll', () => {
+  const currentScrollY = window.scrollY;
+
+  if (currentScrollY < lastScrollY) {
+    // Scrolling up
+    topbar.classList.add('visible');
+  } else {
+    // Scrolling down
+    topbar.classList.remove('visible');
+  }
+
+  lastScrollY = currentScrollY; // Update the last scroll position
+});
+
+
 //popup hwanglander
 function showPopup(event) {
   event.preventDefault();
