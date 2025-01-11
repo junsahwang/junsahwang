@@ -32,12 +32,15 @@ window.addEventListener('scroll', () => {
 //popup hwanglander
 function showPopup(event) {
   event.preventDefault();
-    const audio = document.getElementById('popupAudio');
-    audio.play();
-    document.querySelector('.popup-image').style.display = 'block'; 
-    document.querySelector('.overlay').style.display = 'block'; 
-  setTimeout(hidePopup2, 65000);
+  const audio = document.getElementById('popupAudio');
+  audio.play();
+  document.querySelector('.popup-image').style.display = 'block'; 
+  document.querySelector('.overlay').style.display = 'block'; 
+  
+  // Hide popup when audio ends
+  audio.addEventListener('ended', hidePopup, { once: true });
 }
+
 function hidePopup() {
   const audio = document.getElementById('popupAudio');
   audio.pause();        
@@ -49,12 +52,15 @@ function hidePopup() {
 //popup hwanglander mobile
 function showPopup2(event) {
   event.preventDefault();
-    const audio = document.getElementById('popupAudio2');
-    audio.play();
-    document.querySelector('.popup-image2').style.display = 'block'; 
-    document.querySelector('.overlay2').style.display = 'block';
-  setTimeout(hidePopup2, 65000);
+  const audio = document.getElementById('popupAudio2');
+  audio.play();
+  document.querySelector('.popup-image2').style.display = 'block'; 
+  document.querySelector('.overlay2').style.display = 'block'; 
+  
+  // Hide popup when audio ends
+  audio.addEventListener('ended', hidePopup2, { once: true });
 }
+
 function hidePopup2() {
   const audio = document.getElementById('popupAudio2');
   audio.pause();        
