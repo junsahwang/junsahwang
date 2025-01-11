@@ -187,7 +187,7 @@ body {
 .stagewords1 h1{
   padding-bottom: 5%;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #fff;
 }
 
@@ -201,14 +201,14 @@ body {
 
   .stagewords2 p, 
   .stagewords1 p {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 2; 
     color: #b2b2b2;
   }
 
   .stageimg {
     width: 45%;
-    height: 80vh;
+    height: 65vh;
     padding: 0%;
     object-fit: cover;
   }
@@ -220,7 +220,7 @@ body {
 
   .stageimg1 {
     width: 45%;
-    height: 80vh;
+    height: 60vh;
     padding: 0%;
     object-fit: cover;
   }
@@ -293,11 +293,6 @@ footer {
   .contentinside {
     height: 100%;
   }
-
-  .quote {
-    font-size: 2rem;
-    text-align: left; 
-  }
   
   .signature {
     width: 60%;
@@ -331,6 +326,7 @@ footer {
 
   .stage h1 {
     font-weight: bold;
+    padding-top: 0%;
   }
 
   .stagecontent1,
@@ -351,6 +347,7 @@ footer {
 
   .stagewords1 {
     display: block;
+    padding-top: 0%;
   }
 
   .stageimg1 {
@@ -423,11 +420,6 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 2%;
-  }
-  
-  .quote {
-    font-size: 2rem;
-    text-align: left; 
   }
   
   .signature {
@@ -701,10 +693,6 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 1%; 
-  }
-  
-  .quote {
-    font-size: 2rem;
   }
   
   .signature {
