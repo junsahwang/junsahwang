@@ -23,7 +23,7 @@ body {
 }
 
 .myname a {
-  font-size: 3.7rem;
+  font-size: 4rem;
   color: #fff;
   font-weight: bold;
   text-decoration: none;
@@ -42,7 +42,7 @@ body {
 .sidebar ul li a {
   color: #5c5c5c;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   display: block;
   transition: color 0.3s ease;
 }
@@ -58,6 +58,7 @@ body {
 .hwanglander {
   color: #2b2b2b;
   margin-top: 50%;
+  font-size: 1rem;
 }
 
 .popup-image {
@@ -140,7 +141,7 @@ body {
 
 .words {
   width: 90%; 
-  padding: 5%; 
+  padding: 1.5rem;
   text-align: left;
   display: flex; 
   flex-direction: column;
@@ -149,8 +150,8 @@ body {
 
 .logoname {
   color: #fff;
-  font-size: 1.2rem;
-  padding-bottom: 5%;
+  font-size: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .desc {
@@ -174,7 +175,7 @@ footer {
 
 .copyright {
   color: #ea1212;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding-top: 5%;
 }
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
@@ -195,6 +196,10 @@ footer {
     width: 40%;
   }
 
+  .myname a {
+    font-size: 3.7rem;
+  }
+
   .sidebarinsides {
     padding: 17%;
     padding-bottom: 0;
@@ -203,7 +208,6 @@ footer {
   .main {
     width: 60%;
     margin-left: 40%;
-
   }
 
   .grid {
@@ -321,7 +325,7 @@ footer {
   .myname2 a {
     text-decoration: none;
     color: #ffff;
-    font-size: 3.2rem;
+    font-size: 4rem;
   }
 
   .sidebarinsides2 {
@@ -375,7 +379,7 @@ footer {
 
   .footermedia a {
     padding: 4%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   
 }
@@ -389,18 +393,9 @@ footer {
   .gridimage {
     height: 30rem;
   }
-
-  .logoname {
-    font-size: 1.1rem;
-  }
-  
-  .desc {
-    font-size: 1rem;
-  }
-
   .footermedia a {
     padding: 4%;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -412,10 +407,6 @@ footer {
 
   .gridimage {
     height: 25rem;
-  }
-
-  .logoname {
-    font-size: 1.1rem;
   }
 }
 

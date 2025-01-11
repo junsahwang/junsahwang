@@ -23,7 +23,7 @@ body {
 }
 
 .myname a {
-  font-size: 3.7rem;
+  font-size: 4rem;
   color: #fff;
   font-weight: bold;
   text-decoration: none;
@@ -42,7 +42,7 @@ body {
 .sidebar ul li a {
   color: #5c5c5c;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   display: block;
   transition: color 0.3s ease;
 }
@@ -58,6 +58,7 @@ body {
 .hwanglander {
   color: #2b2b2b;
   margin-top: 50%;
+  font-size: 1rem;
 }
 .popup-image {
   display: none; 
@@ -114,7 +115,7 @@ body {
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 footer {
   text-align: center;
-  padding: 5%;
+  padding: 10%;
   justify-content: center;
 }
 
@@ -141,6 +142,10 @@ footer {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .sidebar {
     width: 40%;
+  }
+
+  .myname a {
+    font-size: 3.7rem;
   }
   
   .sidebarinsides {
@@ -277,7 +282,7 @@ footer {
   .myname2 a {
     text-decoration: none;
     color: #ffff;
-    font-size: 3.2rem;
+    font-size: 4rem;
   }
 
   .sidebarinsides2 {
@@ -324,7 +329,7 @@ footer {
 
   .footermedia a {
     padding: 4%;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -343,7 +348,7 @@ footer {
 
   .footermedia a {
     padding: 4%;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
