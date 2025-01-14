@@ -1,3 +1,36 @@
+//scroll load
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Scroll animations for content
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  document.querySelectorAll(".stage, .banner").forEach(section => {
+    section.classList.add("hidden");
+    observer.observe(section);
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  // Sidebar fade-in
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.classList.add("loaded");
+});
+
+
+
+//name type
+setTimeout(() => {
+  document.getElementById("typewriter").classList.add("done");
+}, 3000);
 
 //open close sidebar2
 function openMediasidebar() {

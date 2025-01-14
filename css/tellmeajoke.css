@@ -1,9 +1,20 @@
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 body, h1, h2, h3, p, ul, li {
   font-family: 'Outfit', sans-serif;
 }
 
 body {
-  background-color: #373737;
+  background-color: #1a1a1a;
   margin: 0;
   overflow-x: hidden;
 }
@@ -11,11 +22,12 @@ body {
 /* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR */
 .sidebar {
   height: 100%;
-  width: 30%;
+  width: 25%;
   position: fixed;
-  background-color: #111;
+  background-color: #1a1a1a;
   overflow-x: hidden;
   z-index: 99;
+  border-right: 0.5px solid #333; 
 }
 
 .sidebarinsides {
@@ -23,7 +35,7 @@ body {
 }
 
 .myname a {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #fff;
   font-weight: bold;
   text-decoration: none;
@@ -95,8 +107,8 @@ body {
 
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
 .main {
-  width: 70%;
-  margin-left: 30%;
+  width: 75%;
+  margin-left: 25%;
 }
 
 .jokeform {
@@ -122,13 +134,13 @@ footer {
 }
 
 .footermedia a {
-  color: #fff;
+  color: #a3a3a3;
   font-size: 1.5rem;
   padding: 2%;
 }
 
 .copyright {
-  color: #fff;
+  color: #a3a3a3;
   font-size: 1.1rem;
   padding-top: 5%;
 }
@@ -196,7 +208,7 @@ footer {
 
   .topbar {
     display: flex;
-    background-color: #111;
+    background-color: #1a1a1a;
     color: #ffff;
     align-items: center;
 
@@ -250,7 +262,7 @@ footer {
     left: -100%; 
     width: 100%;
     height: 100vh; 
-    background-color: #111;
+    background-color: #1a1a1a;
     color: #fff;
     transition: left 0.3s ease;
     z-index: 10; 

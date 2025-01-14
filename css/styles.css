@@ -1,9 +1,20 @@
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 body, h1, h2, h3, p, ul, li {
   font-family: 'Outfit', sans-serif;
 }
 
 body {
-  background-color: #373737;
+  background-color: #1a1a1a;
   margin: 0;
   overflow-x: hidden;
 }
@@ -11,19 +22,49 @@ body {
 /* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR */
 .sidebar {
   height: 100%;
-  width: 30%;
+  width: 25%;
   position: fixed;
-  background-color: #111;
+  background-color: #1a1a1a;
   overflow-x: hidden;
   z-index: 99;
+  border-right: 0.5px solid #333; 
 }
 
 .sidebarinsides {
   padding: 15%;
 }
 
+.sidebar ul li {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeInSidebar 0.8s ease forwards;
+}
+
+@keyframes fadeInSidebar {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.sidebar ul li:nth-child(1) {
+  animation-delay: 0.15s;
+}
+
+.sidebar ul li:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.sidebar ul li:nth-child(3) {
+  animation-delay: 0.45s;
+}
+
+.sidebar ul li:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
 .myname a {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #fff;
   font-weight: bold;
   text-decoration: none;
@@ -93,8 +134,8 @@ body {
 
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
 .main {
-  width: 70%;
-  margin-left: 30%;
+  width: 75%;
+  margin-left: 25%;
   z-index: 0;
 }
 
@@ -124,8 +165,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%; 
-  padding: 5%;
+  width: 80%; 
+  padding: 10%;
 }
 
 .contentinside {
@@ -135,15 +176,49 @@ body {
   gap: 2%;
 }
 
-.quote {
-  font-size: 2rem;
-  text-align: left; 
+.imjunsa {
+  font-size: 10vh; /* Default font size using viewport height */
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: typing 2s steps(20, end), blink-caret 0.5s step-end infinite;
+  animation-fill-mode: forwards;
 }
 
-.signature {
-  width: 50%;
-  height: auto;
-  object-fit: contain;
+/* Responsive font-size for different screen widths */
+@media screen and (max-width: 1005px) {
+  .imjunsa {
+    font-size: 8vh; /* Reduce size for medium screens */
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .imjunsa {
+    font-size: 10vw; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .imjunsa {
+    font-size: 15vw;
+  }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #fff; }
+}
+
+.imjunsa.done {
+  animation: typing 2s steps(20, end);
+  border-right: none; 
 }
 
 .stage {
@@ -203,7 +278,7 @@ body {
   .stagewords1 p {
     font-size: 1.05rem;
     line-height: 2; 
-    color: #b2b2b2;
+    color: #a3a3a3;
   }
 
   .stageimg {
@@ -244,13 +319,13 @@ footer {
 }
 
 .footermedia a {
-  color: #fff;
+  color: #a3a3a3;
   font-size: 1.5rem;
   padding: 2%;
 }
 
 .copyright {
-  color: #fff;
+  color: #a3a3a3;
   font-size: 1.1rem;
   padding-top: 5%;
 }
@@ -287,17 +362,11 @@ footer {
   }
 
   .content {
-    height: 40%;
+    height: 30%;
   }
 
   .contentinside {
-    height: 100%;
-  }
-  
-  .signature {
-    width: 60%;
-    height: auto;
-    object-fit: contain;
+    height: 60%;
   }
 
   .logo {
@@ -422,12 +491,6 @@ footer {
     gap: 2%;
   }
   
-  .signature {
-    width: 60%;
-    height: auto;
-    object-fit: contain;
-  }
-  
   .logo {
     font-size: 15vh;
     padding: 4%;
@@ -445,7 +508,7 @@ footer {
 
   .topbar {
     display: flex;
-    background-color: #111;
+    background-color: #1a1a1a;
     color: #ffff;
     align-items: center;
 
@@ -501,7 +564,7 @@ footer {
     left: -100%; 
     width: 100%;
     height: 100vh; 
-    background-color: #111;
+    background-color: #1a1a1a;
     color: #fff;
     transition: left 0.3s ease; 
     z-index: 10;
@@ -671,7 +734,6 @@ footer {
     justify-content: center; 
     align-items: flex-start; 
     width: 90%;
-    padding: 5%;
   }
 
   .stagewords2 p, 
@@ -694,19 +756,13 @@ footer {
     justify-content: center;
     gap: 1%; 
   }
-  
-  .signature {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
 
   .footermedia a {
     padding: 4%;
     font-size: 1.4rem;
   } 
 }
-
+  
 @media screen and (max-width: 250px) {
   .main {
     display: none;
