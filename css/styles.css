@@ -3,7 +3,7 @@ body, h1, h2, h3, p, ul, li {
 }
 
 body {
-  background-color: #F5F5F5;
+  background-color: #343434;
   margin: 0;
   overflow-x: hidden;
 }
@@ -13,7 +13,7 @@ body {
   height: 100%;
   width: 30%;
   position: fixed;
-  background-color: #00A9E0; 
+  background-color: #131313; 
   overflow-x: hidden;
   z-index: 99;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 .sidebar ul li a {
-  color: #067ca3;
+  color: #434343;
   text-decoration: none;
   font-size: 1.05rem;
   display: block;
@@ -56,7 +56,7 @@ body {
 }
 
 .hwanglander {
-  color: #0bb8f1;
+  color: #000000;
   margin-top: 50%;
   font-size: 1rem;
 }
@@ -110,11 +110,10 @@ body {
 .grid-item {
   text-decoration: none;
   text-align: center;
-  background-color: #FF6F61; 
+  background-color: #434343; 
   box-sizing: border-box;
   overflow: hidden;
   cursor: pointer;
-  border-radius: 0.3rem;
   transition: transform 0.5s ease;
 }
 
@@ -169,13 +168,13 @@ footer {
 }
 
 .footermedia a {
-  color: #00A9E0;
+  color: #000;
   font-size: 1.5rem;
   padding: 2%;
 }
 
 .copyright {
-  color: #00A9E0;
+  color: #000;
   font-size: 1rem;
   padding-top: 5%;
 }
@@ -246,7 +245,7 @@ footer {
     height: 6rem;
     z-index: 10;
     transition: transform 0.5s ease;
-    background-color: #00A9E0;
+    background-color: #131313;
   }
   
   .topbar.hidden {
@@ -270,7 +269,7 @@ footer {
 
   .open {
     font-size: 1.5rem;
-    color: #FF6F61;
+    color: #F5F5F5;
   }
 
   .open:hover {
@@ -284,7 +283,7 @@ footer {
     left: -100%; 
     width: 100%;
     height: 100vh;
-    background-color: #00A9E0;
+    background-color: #131313;
     transition: left 0.5s ease; 
     z-index: 10;  
   }
@@ -344,7 +343,7 @@ footer {
   .sidebarinsides2 ul li a{
     list-style: none;
     text-decoration: none;
-    color: #067ca3;
+    color: #434343;
   }
 
   .sidebarinsides2 ul li a.active{
@@ -352,7 +351,7 @@ footer {
   }
 
   .hwanglander2 {
-    color: #0bb8f1;
+    color: #000000;
     margin-top: 20%;
     font-size: 1rem;
   }
@@ -361,7 +360,7 @@ footer {
     padding: 7%;
     padding-bottom: 0;
     font-size: 1.3rem;
-    color: #FF6F61;
+    color: #F5F5F5;
     z-index: 10; 
   }
 
