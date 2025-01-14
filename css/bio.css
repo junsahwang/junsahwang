@@ -244,13 +244,13 @@ footer {
 }
 
 .footermedia a {
-  color: #ea1212;
+  color: #fff;
   font-size: 1.5rem;
   padding: 2%;
 }
 
 .copyright {
-  color: #ea1212;
+  color: #fff;
   font-size: 1.1rem;
   padding-top: 5%;
 }
@@ -479,7 +479,7 @@ footer {
 
   .open {
     font-size: 1.5rem;
-    color: #ea1212;
+    color: #fff;
   }
   
   .open:hover {
@@ -567,7 +567,7 @@ footer {
     padding: 7%;
     padding-bottom: 0;
     font-size: 1.3rem;
-    color: #ea1212;
+    color: #fff;
   }
 
   .close:hover {
