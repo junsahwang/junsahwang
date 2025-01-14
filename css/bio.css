@@ -3,7 +3,7 @@ body, h1, h2, h3, p, ul, li {
 }
 
 body {
-  background-color: #373737;
+  background-color: #333333;
   margin: 0;
   overflow-x: hidden;
 }
@@ -13,7 +13,7 @@ body {
   height: 100%;
   width: 30%;
   position: fixed;
-  background-color: #111;
+  background-color: #2C2C32; 
   overflow-x: hidden;
   z-index: 99;
 }
@@ -24,7 +24,7 @@ body {
 
 .myname a {
   font-size: 4rem;
-  color: #fff;
+  color: #e3bc3c;
   font-weight: bold;
   text-decoration: none;
 }
@@ -40,23 +40,23 @@ body {
 }
 
 .sidebar ul li a {
-  color: #5c5c5c;
+  color: #a5a5a5;
   text-decoration: none;
   font-size: 1.05rem;
   display: block;
-  transition: color 0.3s ease;
+  transition: color 0.5s ease;
 }
 
 .sidebar ul li a:hover {
-  color: #fff;
+  color: #e3bc3c;
 }
 
 .sidebar .sidebarinsides ul li a.active {
-  color: white;
+  color: #e3bc3c;
 }
 
 .hwanglander {
-  color: #2b2b2b;
+  color: #38383e;
   margin-top: 50%;
   font-size: 1rem;
 }
@@ -188,7 +188,7 @@ body {
   padding-bottom: 5%;
   font-weight: bold;
   font-size: 2rem;
-  color: #fff;
+  color: #e3bc3c;
 }
 
   .stagewords2 h1, 
@@ -208,7 +208,7 @@ body {
 
   .stageimg {
     width: 45%;
-    height: 65vh;
+    height: 60vh;
     padding: 0%;
     object-fit: cover;
   }
@@ -244,13 +244,13 @@ footer {
 }
 
 .footermedia a {
-  color: #ea1212;
+  color: #e3bc3c;
   font-size: 1.5rem;
   padding: 2%;
 }
 
 .copyright {
-  color: #ea1212;
+  color: #e3bc3c;
   font-size: 1.1rem;
   padding-top: 5%;
 }
@@ -320,8 +320,11 @@ footer {
   }
 
   .stageimg {
+    display: block;
     width: 100%;
-    height: 60vh;
+    height: auto;
+    padding: 0%;
+    object-fit: cover;
   }
 
   .stage h1 {
@@ -373,7 +376,7 @@ footer {
   }
 
   .hwanglander2 {
-    color: #363636;
+    color: #38383e;
     margin-top: 20%;
     font-size: 1rem;
   }
@@ -402,19 +405,6 @@ footer {
     left: 0;
   }
   
-  .content {
-    background: linear-gradient(transparent, rgba(2, 2, 5, 1));
-    color: #fff;
-    position: absolute;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%; 
-    padding: 5%;
-  }
-  
   .contentinside {
     display: flex;
     align-items: center;
@@ -428,34 +418,20 @@ footer {
     object-fit: contain;
   }
   
-  .logo {
-    font-size: 15vh;
-    padding: 4%;
-  }
-  
-  .logoname {
-    padding-top: 6%;
-    font-size: 4vh;
-  }
-  
   .desc {
     padding: 5%;
     font-size: 3vh;
   }
 
   .topbar {
-    display: flex;
-    background-color: #111;
-    color: #ffff;
-    align-items: center;
-
-  }
-  .topbar {
     position: fixed;
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 6rem;
     z-index: 10;
     transition: transform 0.5s ease;
+    background-color: #2C2C32;
   }
   
   .topbar.hidden {
@@ -474,12 +450,12 @@ footer {
     font-size: 1.6rem;
     text-align: left;
     text-decoration: none;
-    color: #fff;
+    color: #e3bc3c;
   }
 
   .open {
     font-size: 1.5rem;
-    color: #ea1212;
+    color: #e3bc3c;
   }
   
   .open:hover {
@@ -501,9 +477,8 @@ footer {
     left: -100%; 
     width: 100%;
     height: 100vh; 
-    background-color: #111;
-    color: #fff;
-    transition: left 0.3s ease; 
+    background-color: #2C2C32;
+    transition: left 0.5s ease; 
     z-index: 10;
   }
 
@@ -532,13 +507,13 @@ footer {
 
   .myname2 a {
     text-decoration: none;
-    color: #ffff;
+    color: #e3bc3c;
     font-size: 4rem;
   }
 
   .sidebarinsides2 {
     padding: 5%;
-    color: #fff;
+    color: #e3bc3c;
     list-style: none;
     text-align: left;
   }
@@ -556,18 +531,19 @@ footer {
   .sidebarinsides2 ul li a{
     list-style: none;
     text-decoration: none;
-    color: #b4b4b4 ;
+    color: #a5a5a5;
   }
 
   .sidebarinsides2 ul li a.active{
-    color: #ffff ;
+    color: #e3bc3c;
   }
 
   .close {
     padding: 7%;
     padding-bottom: 0;
     font-size: 1.3rem;
-    color: #ea1212;
+    color: #e3bc3c;
+    z-index: 10; 
   }
 
   .close:hover {
@@ -585,12 +561,12 @@ footer {
   }
 
   .stage {
-    padding: 5%;
+    padding: 3%;
   }
 
   .stageimg {
     width: 100%;
-    height: 60vh;
+    height: 75%;
   }
 
   .stagevid {
@@ -611,6 +587,7 @@ footer {
 
   .stage h1 {
     font-weight: normal;
+    padding-bottom: 2%;
   }
 
   .stagecontent1,
@@ -623,6 +600,7 @@ footer {
   .stagewords2 {
     width: 100%;
     padding: 5% 0%;
+    padding-top: 2%;
   }
 
   .stagewords2 {
@@ -660,18 +638,6 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-  }
-  
-  .content {
-    background: linear-gradient(transparent, rgba(2, 2, 5, 1));
-    color: #fff;
-    position: absolute;
-    text-align: center;
-    display: flex;
-    justify-content: center; 
-    align-items: flex-start; 
-    width: 90%;
-    padding: 5%;
   }
 
   .stagewords2 p, 
@@ -743,4 +709,5 @@ footer {
   }
 }
 /* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA */
+
 
