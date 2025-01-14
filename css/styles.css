@@ -69,6 +69,7 @@ body {
   transform: translate(-50%, -50%);
   z-index: 1000;
 }
+
 .overlay {
   display: none;
   position: fixed;
@@ -88,76 +89,151 @@ body {
 .mediasidebar {
   display: none;
 }
-
-/* Rest of your styles */
-
 /*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*//*TOPBAR*/
 
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
 .main {
   width: 70%;
   margin-left: 30%;
-  display: grid;
+  z-index: 0;
 }
 
-.grid {
-  display: grid;
-  padding: 1%;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.grid-item {
-  text-decoration: none;
-  text-align: center;
-  background-color: #4a4a4a; 
-  box-sizing: border-box;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.5s ease;
-}
-
-.grid-item:hover {
-  transform: scale(1.02); 
-}
-
-.gridinsides {
+.banner {
+  height: 65vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
+  position: relative; 
 }
 
-.gridimage {
+.bannerimg {
   width: 100%;
-  filter: grayscale(20%) brightness(70%); 
-  transition: filter 0.5s ease;
-  height: 25rem;
+  height: 100%;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.grid-item:hover .gridimage {
-  filter: none; 
-}
-
-.words {
-  width: 90%; 
-  padding: 1.5rem;
-  text-align: left;
-  display: flex; 
-  flex-direction: column;
-  align-items: flex-start; 
-}
-
-.logoname {
+.content {
+  background: linear-gradient(transparent, rgba(2, 2, 5, 1));
   color: #fff;
-  font-size: 1rem;
-  padding-bottom: 1.5rem;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%; 
+  padding: 5%;
 }
 
-.desc {
-  color: #a3a3a3;
-  font-size: 1rem;
+.contentinside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
 }
+
+.quote {
+  font-size: 2rem;
+  text-align: left; 
+}
+
+.signature {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+}
+
+.stage {
+  background-color: #00000000;
+  color: #fff;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0%;
+}
+
+.stagecontent1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding: 0% 0%;
+}
+
+.stagecontent2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding: 0% 0%;
+}
+
+.stagewords1 {
+  width: 45%;
+  height: 40%;
+  text-align: left;
+  padding: 0% 5%;
+}
+
+.stagewords2 {
+  width: 40%;
+  height: 40%;
+  text-align: right;
+  padding: 0% 5%;
+}
+
+.stagewords2 h1, 
+.stagewords1 h1{
+  padding-bottom: 5%;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+}
+
+  .stagewords2 h1, 
+  .stagewords1 h1,
+  .stagewords2 p, 
+  .stagewords1 p {
+    margin: 0;
+    line-height: 2;
+  }
+
+  .stagewords2 p, 
+  .stagewords1 p {
+    font-size: 1.05rem;
+    line-height: 2; 
+    color: #b2b2b2;
+  }
+
+  .stageimg {
+    width: 45%;
+    height: 65vh;
+    padding: 0%;
+    object-fit: cover;
+  }
+
+  .stagevid {
+    width: 70%; 
+    height: auto;
+  }
+
+  .stageimg1 {
+    width: 45%;
+    height: 60vh;
+    padding: 0%;
+    object-fit: cover;
+  }
+
+  .stageimgmobile {
+    display: none;
+    width: 45%;
+    height: 80vh;
+    padding: 0%;
+    object-fit: cover;
+  }
+
+
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
 
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
@@ -175,19 +251,15 @@ footer {
 
 .copyright {
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding-top: 5%;
 }
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 
 /* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA */
-@media screen and (min-width: 1024px) and (max-width: 1264px) {
+@media screen and (min-width: 1024px) and (max-width: 1250px) {
   .sidebarinsides {
     padding: 12%;
-  }
-  
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -210,13 +282,88 @@ footer {
     margin-left: 40%;
   }
 
-  .grid {
-    padding: 3%;
-    grid-template-columns: repeat(1, 1fr);
+  .banner {
+    height: 90vh; 
+  }
+
+  .content {
+    height: 40%;
+  }
+
+  .contentinside {
+    height: 100%;
   }
   
-  .gridimage {
-    height: 25rem;
+  .signature {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .logo {
+    font-size: 15vh;
+    padding: 4%;
+  }
+  
+  .logoname {
+    padding-top: 6%;
+    font-size: 4vh;
+  }
+  
+  .desc {
+    padding: 5%;
+    font-size: 3vh;
+  }
+
+  .stage {
+    padding: 5%;
+  }
+
+  .stageimg {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .stage h1 {
+    font-weight: bold;
+    padding-top: 0%;
+  }
+
+  .stagecontent1,
+  .stagecontent2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stagewords1,
+  .stagewords2 {
+    width: 100%;
+    padding: 5% 0%;
+  }
+
+  .stagewords2 {
+    display: block;
+  } 
+
+  .stagewords1 {
+    display: block;
+    padding-top: 0%;
+  }
+
+  .stageimg1 {
+    display: none;
+  }
+
+  .stagevid {
+    width: 100%; 
+  }
+
+  .stageimgmobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    object-fit: cover;
   }
 }
 
@@ -225,16 +372,75 @@ footer {
     display: none;
   }
 
+  .hwanglander2 {
+    color: #363636;
+    margin-top: 20%;
+    font-size: 1rem;
+  }
+
   .main {
     width: 100%;
     margin-left: 0;
     padding-top: 6rem;
   }
 
-  .grid {
-    padding: 3%;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+  .banner {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative; 
+  }
+  
+  .bannerimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .content {
+    background: linear-gradient(transparent, rgba(2, 2, 5, 1));
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; 
+    padding: 5%;
+  }
+  
+  .contentinside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+  }
+  
+  .signature {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .logo {
+    font-size: 15vh;
+    padding: 4%;
+  }
+  
+  .logoname {
+    padding-top: 6%;
+    font-size: 4vh;
+  }
+  
+  .desc {
+    padding: 5%;
+    font-size: 3vh;
   }
 
   .topbar {
@@ -275,10 +481,18 @@ footer {
     font-size: 1.5rem;
     color: #fff;
   }
-
+  
   .open:hover {
     cursor: pointer;
   }
+
+  .sidebar2 {
+    padding: 5%;
+    padding-left: 10%;
+    padding-top: 3%;
+    z-index: 1000;
+  }
+
 
   .mediasidebar {
     display: block;
@@ -286,11 +500,11 @@ footer {
     top: 0;
     left: -100%; 
     width: 100%;
-    height: 100vh;
+    height: 100vh; 
     background-color: #111;
     color: #fff;
     transition: left 0.3s ease; 
-    z-index: 10;  
+    z-index: 10;
   }
 
   .popup-image2 {
@@ -310,12 +524,6 @@ footer {
     height: 100%;
     background: rgba(0, 0, 0, 0.732);
     z-index: 999;
-  }
-  
-  .sidebar2 {
-    padding: 5%;
-    padding-left: 10%;
-    padding-top: 3%;
   }
 
   .myname2 {
@@ -355,59 +563,148 @@ footer {
     color: #ffff ;
   }
 
-  .hwanglander2 {
-    color: #363636;
-    margin-top: 20%;
-    font-size: 1rem;
-  }
-  
   .close {
     padding: 7%;
     padding-bottom: 0;
     font-size: 1.3rem;
     color: #fff;
-    z-index: 10; 
   }
 
   .close:hover {
     cursor: pointer;
   }
 
-  .gridimage {
-    filter: none;
+  .stage h1 {
+    font-weight: normal;
+  }
+
+  .stagecontent1,
+  .stagecontent2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stage {
+    padding: 5%;
+  }
+
+  .stageimg {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .stagevid {
+    width: 100%; 
+  }
+
+  .stageimg1 {
+    display: none;
+  }
+
+  .stageimgmobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    object-fit: cover;
+  }
+
+  .stage h1 {
+    font-weight: normal;
+  }
+
+  .stagecontent1,
+  .stagecontent2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stagewords1,
+  .stagewords2 {
+    width: 100%;
+    padding: 5% 0%;
+  }
+
+  .stagewords2 {
+    display: block;
+  }
+
+  .stagewords1 {
+    display: block;
+  }
+
+  .footermedia {
+    padding-top: 0%;
   }
 
   .footermedia a {
     padding: 4%;
     font-size: 1.2rem;
-  }
-  
+  } 
 }
 
-@media screen and (min-width: 314px) and (max-width: 769px) {
-
-  .grid {
-    grid-template-columns: repeat(1, 1fr);
+@media screen and (max-width: 499px) {
+  .banner {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative; 
+  }
+  
+  .bannerimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .content {
+    background: linear-gradient(transparent, rgba(2, 2, 5, 1));
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    width: 90%;
+    padding: 5%;
   }
 
-  .gridimage {
-    height: 30rem;
+  .stagewords2 p, 
+  .stagewords1 p {
+    font-size: 1rem;
+    line-height: 1.5; 
   }
+  
+  .stagewords2 h1, 
+  .stagewords1 h1{
+    font-size: 1.5rem;
+    padding: 0%;
+    padding-top: 0%;
+  }
+
+  .contentinside {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 1%; 
+  }
+  
+  .signature {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
   .footermedia a {
     padding: 4%;
     font-size: 1.4rem;
-  }
-}
-
-@media screen and (min-width: 250px) and (max-width: 314px) {
-  .grid {
-    padding: 4%;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .gridimage {
-    height: 25rem;
-  }
+  } 
 }
 
 @media screen and (max-width: 250px) {
