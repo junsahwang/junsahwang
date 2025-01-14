@@ -115,7 +115,6 @@ body {
 .grid {
   display: grid;
   padding: 1%;
-  padding-left: 0%;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }

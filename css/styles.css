@@ -205,11 +205,9 @@ body {
 .imjunsa.done {
   animation: typing 2s steps(20, end);
   border-right: none; 
-  color: #fff;
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  
   animation-fill-mode: forwards;
   text-align: left; 
 }
