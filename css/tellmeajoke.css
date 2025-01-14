@@ -102,7 +102,6 @@ body {
 .jokeform {
   height: 90vh;
   padding: 5%;
-  padding-bottom: 0%;
 }
 
 .jokeform iframe {
@@ -117,7 +116,6 @@ body {
 footer {
   text-align: center;
   padding: 10%;
-  padding-top: 5%;
   justify-content: center;
 }
 
@@ -161,6 +159,7 @@ footer {
   }
 
   .jokeform {
+    height: 110vh;
     padding: 0%;
   }
 
@@ -187,6 +186,7 @@ footer {
   }
 
   .jokeform {
+    height: 105vh;
     padding: 0%;
   }
 
@@ -319,16 +319,39 @@ footer {
     cursor: pointer;
   }
 
+  .footermedia {
+    padding-top: 0%;
+  }
+
   .footermedia a {
     padding: 4%;
     font-size: 1.2rem;
   }
 }
 
-@media screen and (min-width: 314px) and (max-width: 769px) {
+@media screen and (max-width: 450px) {
+  .jokeform {
+    height: 115vh;
+    padding: 0%;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .jokeform {
+    height: 120vh;
+    padding: 0%;
+  }
+
   .footermedia a {
     padding: 4%;
     font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 333px) {
+  .jokeform {
+    height: 135vh;
+    padding: 0%;
   }
 }
 
