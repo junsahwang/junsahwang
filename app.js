@@ -1,3 +1,4 @@
+
 //open close sidebar2
 function openMediasidebar() {
   const mediaSidebar = document.getElementById('mediasidebar');
