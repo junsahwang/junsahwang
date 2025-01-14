@@ -234,6 +234,7 @@ body {
     height: 80vh;
     padding: 0%;
     object-fit: cover;
+    border-radius: 0.3rem;
   }
 
 
