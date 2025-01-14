@@ -122,7 +122,7 @@ body {
 .grid-item {
   text-decoration: none;
   text-align: center;
-  background-color: #242424; 
+  background-color: #000000; 
   box-sizing: border-box;
   overflow: hidden;
   cursor: pointer;
@@ -173,7 +173,9 @@ body {
 }
 
 .logoname {
-  color: #fff;
+  color: transparent;  
+  background: linear-gradient(to right, #9a24e8, #26e0da);
+  -webkit-background-clip: text; 
   font-size: 1rem;
   padding-bottom: 1.5rem;
 }
@@ -192,13 +194,13 @@ footer {
 }
 
 .footermedia a {
-  color: #a3a3a3;
+  color: #fff;
   font-size: 1.5rem;
   padding: 2%;
 }
 
 .copyright {
-  color: #a3a3a3;
+  color: #fff;
   font-size: 1rem;
   padding-top: 5%;
 }

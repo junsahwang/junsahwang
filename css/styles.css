@@ -158,8 +158,7 @@ body {
 }
 
 .content {
-  background: linear-gradient(transparent, rgba(2, 2, 5, 1));
-  color: #fff;
+  background: linear-gradient(transparent, rgb(0, 0, 0));
   position: absolute;
   text-align: center;
   display: flex;
@@ -178,7 +177,9 @@ body {
 
 .imjunsa {
   font-size: 12vw;
-  color: #fff;
+  color: transparent;
+  background: linear-gradient(to right, #9a24e8, #26e0da);
+  -webkit-background-clip: text; 
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
@@ -188,8 +189,8 @@ body {
 }
 
 .imjunsa span {
-  display: block;  /* Ensures each line is on a new line */
-  text-align: left;  /* Ensures both lines are left-aligned */
+  display: block; 
+  text-align: left; 
 }
 
 @keyframes typing {
@@ -214,7 +215,6 @@ body {
 
 .stage {
   background-color: #00000000;
-  color: #fff;
   height: 70%;
   justify-content: center;
   align-items: center;
@@ -252,7 +252,9 @@ body {
   padding-bottom: 5%;
   font-weight: bold;
   font-size: 2rem;
-  color: #fff;
+  color: transparent;  
+  background: linear-gradient(to right, #9a24e8, #26e0da);
+  -webkit-background-clip: text; 
 }
 
   .stagewords2 h1, 
@@ -268,6 +270,10 @@ body {
     font-size: 1.05rem;
     line-height: 2; 
     color: #a3a3a3;
+  }
+
+  .special {
+    color: #fff;
   }
 
   .stageimg {
@@ -312,13 +318,13 @@ footer {
 }
 
 .footermedia a {
-  color: #a3a3a3;
+  color: #fff;
   font-size: 1.5rem;
   padding: 2%;
 }
 
 .copyright {
-  color: #a3a3a3;
+  color: #fff;
   font-size: 1.1rem;
   padding-top: 5%;
 }
@@ -429,11 +435,6 @@ footer {
 
   .banner {
     height: 55vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative; 
   }
   
   .bannerimg {
@@ -457,7 +458,6 @@ footer {
   .topbar {
     display: flex;
     background-color: #1a1a1a;
-    color: #ffff;
     align-items: center;
 
   }
@@ -656,12 +656,7 @@ footer {
 
 @media screen and (max-width: 499px) {
   .banner {
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative; 
+    height: 35vh;
   }
   
   .bannerimg {
