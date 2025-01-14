@@ -130,6 +130,17 @@ body {
   transition: transform 0.5s ease;
 }
 
+.grid-item {
+  opacity: 0;
+  transform: translateY(20px);  /* Start below the viewport */
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+/* Class that will be added when the item enters the viewport */
+.grid-item.visible {
+  opacity: 1;
+  transform: translateY(0);  /* Slide into view */
+}
 .grid-item:hover {
   transform: scale(1.02); 
 }

@@ -1,7 +1,7 @@
 .hidden {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 1.2s ease, transform 1.2s ease;
 }
 
 .visible {
@@ -708,7 +708,7 @@ footer {
 
 @media screen and (max-width: 499px) {
   .banner {
-    height: 65vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

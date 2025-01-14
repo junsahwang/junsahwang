@@ -25,7 +25,42 @@ document.addEventListener("DOMContentLoaded", () => {
   sidebar.classList.add("loaded");
 });
 
+//grid shit
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target); // Stop observing once the item is in view
+    }
+  });
+}, {
+  threshold: 0.1 // Trigger the animation when 10% of the item is in view
+});
 
+document.querySelectorAll('.main .grid-item').forEach(item => {
+  observer.observe(item);
+});
+
+//beggar typeshit
+
+//joker
+// Function to add 'visible' class when the .jokeform div comes into view
+const jokeFormObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible'); // Add 'visible' class to trigger animation
+      observer.unobserve(entry.target); // Stop observing once the element has appeared
+    }
+  });
+}, {
+  threshold: 0.1 // Trigger the animation when 10% of the .jokeform div is in view
+});
+
+// Target the .jokeform div to observe
+const jokeForm = document.querySelector('.jokeform');
+if (jokeForm) {
+  jokeFormObserver.observe(jokeForm);
+}
 
 //name type
 setTimeout(() => {
