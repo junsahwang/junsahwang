@@ -13,7 +13,7 @@ body {
   height: 100%;
   width: 30%;
   position: fixed;
-  background-color: #2C2C32; 
+  background-color: #222226; 
   overflow-x: hidden;
   z-index: 99;
 }
@@ -431,7 +431,7 @@ footer {
     height: 6rem;
     z-index: 10;
     transition: transform 0.5s ease;
-    background-color: #2C2C32;
+    background-color: #222226;
   }
   
   .topbar.hidden {
@@ -477,7 +477,7 @@ footer {
     left: -100%; 
     width: 100%;
     height: 100vh; 
-    background-color: #2C2C32;
+    background-color: #222226;
     transition: left 0.5s ease; 
     z-index: 10;
   }
