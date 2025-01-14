@@ -3,7 +3,7 @@ body, h1, h2, h3, p, ul, li {
 }
 
 body {
-  background-color: #333333;
+  background-color: #F5F5F5;
   margin: 0;
   overflow-x: hidden;
 }
@@ -13,7 +13,7 @@ body {
   height: 100%;
   width: 30%;
   position: fixed;
-  background-color: #222226; 
+  background-color: #00A9E0;  
   overflow-x: hidden;
   z-index: 99;
 }
@@ -24,7 +24,7 @@ body {
 
 .myname a {
   font-size: 4rem;
-  color: #e3bc3c;
+  color: #F5F5F5;
   font-weight: bold;
   text-decoration: none;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 .sidebar ul li a {
-  color: #a5a5a5;
+  color: #067ca3;
   text-decoration: none;
   font-size: 1.05rem;
   display: block;
@@ -48,15 +48,15 @@ body {
 }
 
 .sidebar ul li a:hover {
-  color: #e3bc3c;
+  color: #F5F5F5;
 }
 
 .sidebar .sidebarinsides ul li a.active {
-  color: #e3bc3c;
+  color: #F5F5F5;
 }
 
 .hwanglander {
-  color: #38383e;
+  color: #0bb8f1;
   margin-top: 50%;
   font-size: 1rem;
 }
@@ -118,7 +118,7 @@ body {
 
 .content {
   background: linear-gradient(transparent, rgba(2, 2, 5, 1));
-  color: #fff;
+  color: #F5F5F5;
   position: absolute;
   text-align: center;
   display: flex;
@@ -148,7 +148,7 @@ body {
 
 .stage {
   background-color: #00000000;
-  color: #fff;
+  color: #F5F5F5;
   height: 70%;
   justify-content: center;
   align-items: center;
@@ -188,7 +188,7 @@ body {
   padding-bottom: 5%;
   font-weight: bold;
   font-size: 2rem;
-  color: #e3bc3c;
+  color: #FF6F61;
 }
 
   .stagewords2 h1, 
@@ -203,7 +203,7 @@ body {
   .stagewords1 p {
     font-size: 1.05rem;
     line-height: 2; 
-    color: #b2b2b2;
+    color: #232323;
   }
 
   .stageimg {
@@ -211,11 +211,13 @@ body {
     height: 60vh;
     padding: 0%;
     object-fit: cover;
+    border-radius: 0.3rem;
   }
 
   .stagevid {
     width: 70%; 
     height: auto;
+    border-radius: 0.3rem;
   }
 
   .stageimg1 {
@@ -223,6 +225,7 @@ body {
     height: 60vh;
     padding: 0%;
     object-fit: cover;
+    border-radius: 0.3rem;
   }
 
   .stageimgmobile {
@@ -244,13 +247,13 @@ footer {
 }
 
 .footermedia a {
-  color: #e3bc3c;
+  color: #00A9E0;
   font-size: 1.5rem;
   padding: 2%;
 }
 
 .copyright {
-  color: #e3bc3c;
+  color: #00A9E0;
   font-size: 1.1rem;
   padding-top: 5%;
 }
@@ -376,7 +379,7 @@ footer {
   }
 
   .hwanglander2 {
-    color: #38383e;
+    color: #0bb8f1;
     margin-top: 20%;
     font-size: 1rem;
   }
@@ -431,7 +434,7 @@ footer {
     height: 6rem;
     z-index: 10;
     transition: transform 0.5s ease;
-    background-color: #222226;
+    background-color: #00A9E0;
   }
   
   .topbar.hidden {
@@ -450,12 +453,12 @@ footer {
     font-size: 1.6rem;
     text-align: left;
     text-decoration: none;
-    color: #e3bc3c;
+    color: #F5F5F5;
   }
 
   .open {
     font-size: 1.5rem;
-    color: #e3bc3c;
+    color: #FF6F61;
   }
   
   .open:hover {
@@ -477,7 +480,7 @@ footer {
     left: -100%; 
     width: 100%;
     height: 100vh; 
-    background-color: #222226;
+    background-color: #00A9E0;
     transition: left 0.5s ease; 
     z-index: 10;
   }
@@ -507,13 +510,13 @@ footer {
 
   .myname2 a {
     text-decoration: none;
-    color: #e3bc3c;
+    color: #F5F5F5;
     font-size: 4rem;
   }
 
   .sidebarinsides2 {
     padding: 5%;
-    color: #e3bc3c;
+    color: #F5F5F5;
     list-style: none;
     text-align: left;
   }
@@ -531,18 +534,18 @@ footer {
   .sidebarinsides2 ul li a{
     list-style: none;
     text-decoration: none;
-    color: #a5a5a5;
+    color: #067ca3;
   }
 
   .sidebarinsides2 ul li a.active{
-    color: #e3bc3c;
+    color: #F5F5F5;
   }
 
   .close {
     padding: 7%;
     padding-bottom: 0;
     font-size: 1.3rem;
-    color: #e3bc3c;
+    color: #FF6F61;
     z-index: 10; 
   }
 
