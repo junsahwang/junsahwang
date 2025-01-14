@@ -140,7 +140,7 @@ body {
 }
 
 .banner {
-  height: 65vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -165,45 +165,31 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%; 
-  padding: 10%;
+  width: 100%; 
 }
 
 .contentinside {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2%;
+  padding: 5%;
+  width: 90%;
 }
 
 .imjunsa {
-  font-size: 10vh; /* Default font size using viewport height */
-  font-weight: bold;
+  font-size: 12vw;
   color: #fff;
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
   animation: typing 2s steps(20, end), blink-caret 0.5s step-end infinite;
   animation-fill-mode: forwards;
+  text-align: left; 
 }
 
-/* Responsive font-size for different screen widths */
-@media screen and (max-width: 1005px) {
-  .imjunsa {
-    font-size: 8vh; /* Reduce size for medium screens */
-  }
-}
-
-@media screen and (max-width: 769px) {
-  .imjunsa {
-    font-size: 10vw; 
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .imjunsa {
-    font-size: 15vw;
-  }
+.imjunsa span {
+  display: block;  /* Ensures each line is on a new line */
+  text-align: left;  /* Ensures both lines are left-aligned */
 }
 
 @keyframes typing {
@@ -219,6 +205,13 @@ body {
 .imjunsa.done {
   animation: typing 2s steps(20, end);
   border-right: none; 
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  
+  animation-fill-mode: forwards;
+  text-align: left; 
 }
 
 .stage {
@@ -227,21 +220,19 @@ body {
   height: 70%;
   justify-content: center;
   align-items: center;
-  padding: 5% 0%;
+  padding: 3%;
 }
 
 .stagecontent1 {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  padding: 0% 0%;
 }
 
 .stagecontent2 {
   display: flex;
   flex-direction: row;
   justify-content: right;
-  padding: 0% 0%;
 }
 
 .stagewords1 {
@@ -286,11 +277,13 @@ body {
     height: 65vh;
     padding: 0%;
     object-fit: cover;
+    border-radius: 0.5rem;
   }
 
   .stagevid {
     width: 70%; 
     height: auto;
+    border-radius: 0.5rem;
   }
 
   .stageimg1 {
@@ -298,6 +291,7 @@ body {
     height: 60vh;
     padding: 0%;
     object-fit: cover;
+    border-radius: 0.5rem;
   }
 
   .stageimgmobile {
@@ -306,6 +300,7 @@ body {
     height: 80vh;
     padding: 0%;
     object-fit: cover;
+    border-radius: 0.5rem;
   }
 
 
@@ -340,11 +335,11 @@ footer {
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .sidebar {
-    width: 40%;
+    width: 35%;
   }
 
   .myname a {
-    font-size: 3.7rem;
+    font-size: 3rem;
   }
 
   .sidebarinsides {
@@ -353,35 +348,16 @@ footer {
   }
 
   .main {
-    width: 60%;
-    margin-left: 40%;
+    width: 65%;
+    margin-left: 35%;
   }
 
   .banner {
-    height: 90vh; 
-  }
-
-  .content {
-    height: 30%;
+    height: 50vh; 
   }
 
   .contentinside {
     height: 60%;
-  }
-
-  .logo {
-    font-size: 15vh;
-    padding: 4%;
-  }
-  
-  .logoname {
-    padding-top: 6%;
-    font-size: 4vh;
-  }
-  
-  .desc {
-    padding: 5%;
-    font-size: 3vh;
   }
 
   .stage {
@@ -454,7 +430,7 @@ footer {
   }
 
   .banner {
-    height: 65vh;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -463,25 +439,10 @@ footer {
   }
   
   .bannerimg {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
-  }
-  
-  .content {
-    background: linear-gradient(transparent, rgba(2, 2, 5, 1));
-    color: #fff;
-    position: absolute;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%; 
-    padding: 5%;
   }
   
   .contentinside {
@@ -490,20 +451,9 @@ footer {
     justify-content: center;
     gap: 2%;
   }
-  
-  .logo {
-    font-size: 15vh;
-    padding: 4%;
-  }
-  
-  .logoname {
-    padding-top: 6%;
-    font-size: 4vh;
-  }
-  
-  .desc {
-    padding: 5%;
-    font-size: 3vh;
+
+  .imjunsa {
+    font-size: 18vw;
   }
 
   .topbar {
@@ -717,23 +667,10 @@ footer {
   }
   
   .bannerimg {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
-  }
-  
-  .content {
-    background: linear-gradient(transparent, rgba(2, 2, 5, 1));
-    color: #fff;
-    position: absolute;
-    text-align: center;
-    display: flex;
-    justify-content: center; 
-    align-items: flex-start; 
-    width: 90%;
   }
 
   .stagewords2 p, 
@@ -755,6 +692,10 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 1%; 
+  }
+
+  .imjunsa {
+    font-size: 20vw;
   }
 
   .footermedia a {
