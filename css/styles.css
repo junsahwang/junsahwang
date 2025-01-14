@@ -3,7 +3,7 @@ body, h1, h2, h3, p, ul, li {
 }
 
 body {
-  background-color: #343434;
+  background-color: #373737;
   margin: 0;
   overflow-x: hidden;
 }
@@ -13,7 +13,7 @@ body {
   height: 100%;
   width: 30%;
   position: fixed;
-  background-color: #131313; 
+  background-color: #111;
   overflow-x: hidden;
   z-index: 99;
 }
@@ -24,7 +24,7 @@ body {
 
 .myname a {
   font-size: 4rem;
-  color: #F5F5F5;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
 }
@@ -40,23 +40,23 @@ body {
 }
 
 .sidebar ul li a {
-  color: #434343;
+  color: #5c5c5c;
   text-decoration: none;
   font-size: 1.05rem;
   display: block;
-  transition: color 0.5s ease;
+  transition: color 0.3s ease;
 }
 
 .sidebar ul li a:hover {
-  color: #F5F5F5;
+  color: #fff;
 }
 
 .sidebar .sidebarinsides ul li a.active {
-  color: #F5F5F5;
+  color: white;
 }
 
 .hwanglander {
-  color: #000000;
+  color: #2b2b2b;
   margin-top: 50%;
   font-size: 1rem;
 }
@@ -110,7 +110,7 @@ body {
 .grid-item {
   text-decoration: none;
   text-align: center;
-  background-color: #434343; 
+  background-color: #4a4a4a; 
   box-sizing: border-box;
   overflow: hidden;
   cursor: pointer;
@@ -149,13 +149,13 @@ body {
 }
 
 .logoname {
-  color: #F5F5F5;
+  color: #fff;
   font-size: 1rem;
   padding-bottom: 1.5rem;
 }
 
 .desc {
-  color: #F5F5F5;
+  color: #a3a3a3;
   font-size: 1rem;
 }
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
@@ -168,13 +168,13 @@ footer {
 }
 
 .footermedia a {
-  color: #000;
+  color: #ea1212;
   font-size: 1.5rem;
   padding: 2%;
 }
 
 .copyright {
-  color: #000;
+  color: #ea1212;
   font-size: 1rem;
   padding-top: 5%;
 }
@@ -236,16 +236,20 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
-  
+
+  .topbar {
+    display: flex;
+    background-color: #111;
+    color: #ffff;
+    align-items: center;
+
+  }
   .topbar {
     position: fixed;
-    display: flex;
-    align-items: center;
     width: 100%;
     height: 6rem;
     z-index: 10;
     transition: transform 0.5s ease;
-    background-color: #131313;
   }
   
   .topbar.hidden {
@@ -264,12 +268,12 @@ footer {
     font-size: 1.6rem;
     text-align: left;
     text-decoration: none;
-    color: #F5F5F5;
+    color: #fff;
   }
 
   .open {
     font-size: 1.5rem;
-    color: #F5F5F5;
+    color: #ea1212;
   }
 
   .open:hover {
@@ -283,8 +287,9 @@ footer {
     left: -100%; 
     width: 100%;
     height: 100vh;
-    background-color: #131313;
-    transition: left 0.5s ease; 
+    background-color: #111;
+    color: #fff;
+    transition: left 0.3s ease; 
     z-index: 10;  
   }
 
@@ -319,13 +324,13 @@ footer {
 
   .myname2 a {
     text-decoration: none;
-    color: #F5F5F5;
+    color: #ffff;
     font-size: 4rem;
   }
 
   .sidebarinsides2 {
     padding: 5%;
-    color: #F5F5F5;
+    color: #fff;
     list-style: none;
     text-align: left;
   }
@@ -343,15 +348,15 @@ footer {
   .sidebarinsides2 ul li a{
     list-style: none;
     text-decoration: none;
-    color: #434343;
+    color: #b4b4b4 ;
   }
 
   .sidebarinsides2 ul li a.active{
-    color: #F5F5F5;
+    color: #ffff ;
   }
 
   .hwanglander2 {
-    color: #000000;
+    color: #363636;
     margin-top: 20%;
     font-size: 1rem;
   }
@@ -360,7 +365,7 @@ footer {
     padding: 7%;
     padding-bottom: 0;
     font-size: 1.3rem;
-    color: #F5F5F5;
+    color: #ea1212;
     z-index: 10; 
   }
 
@@ -441,4 +446,3 @@ footer {
   }
 }
 /* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA */
-
