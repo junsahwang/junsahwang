@@ -333,11 +333,11 @@ footer {
   .sidebarinsides2 ul li a{
     list-style: none;
     text-decoration: none;
-    color: #b4b4b4 ;
+    color: #5c5c5c;
   }
 
   .sidebarinsides2 ul li a.active{
-    color: #ffff ;
+    color: #fff ;
   }
 
   .close {

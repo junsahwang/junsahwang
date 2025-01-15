@@ -64,7 +64,7 @@ body {
 }
 
 .sidebar .sidebarinsides ul li a.active {
-  color: white;
+  color: #fff;
 }
 
 .hwanglander {
@@ -220,7 +220,7 @@ footer {
   .topbar {
     display: flex;
     background-color: #1a1a1a;
-    color: #ffff;
+    color: #fff;
     align-items: center;
 
   }
@@ -304,7 +304,7 @@ footer {
 
   .myname2 a {
     text-decoration: none;
-    color: #ffff;
+    color: #fff;
     font-size: 4rem;
   }
 
@@ -328,11 +328,11 @@ footer {
   .sidebarinsides2 ul li a{
     list-style: none;
     text-decoration: none;
-    color: #b4b4b4 ;
+    color: #5c5c5c;
   }
 
   .sidebarinsides2 ul li a.active{
-    color: #ffff ;
+    color: #fff ;
   }
 
   .close {
