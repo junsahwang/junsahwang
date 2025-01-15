@@ -175,7 +175,7 @@ body {
 .logoname {
   color: transparent;  
   background: linear-gradient(to right, #9a24e8, #26e0da);
-  -webkit-background-clip: text; 
+  background-clip: text; 
   font-size: 1rem;
   padding-bottom: 1.5rem;
 }
@@ -194,13 +194,13 @@ footer {
 }
 
 .footermedia a {
-  color: #fff;
+  color: #a3a3a3;
   font-size: 1.5rem;
   padding: 2%;
 }
 
 .copyright {
-  color: #fff;
+  color: #a3a3a3;
   font-size: 1rem;
   padding-top: 5%;
 }

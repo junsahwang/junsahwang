@@ -179,7 +179,7 @@ body {
   font-size: 12vw;
   color: transparent;
   background: linear-gradient(to right, #9a24e8, #26e0da);
-  -webkit-background-clip: text; 
+  background-clip: text; 
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
@@ -254,7 +254,7 @@ body {
   font-size: 2rem;
   color: transparent;  
   background: linear-gradient(to right, #9a24e8, #26e0da);
-  -webkit-background-clip: text; 
+  background-clip: text; 
 }
 
   .stagewords2 h1, 
@@ -318,13 +318,13 @@ footer {
 }
 
 .footermedia a {
-  color: #fff;
+  color: #a3a3a3;
   font-size: 1.5rem;
   padding: 2%;
 }
 
 .copyright {
-  color: #fff;
+  color: #a3a3a3;
   font-size: 1.1rem;
   padding-top: 5%;
 }
