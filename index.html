@@ -1,162 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang=en>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Junsa Hwang is a mechanical engineering student and innovator who aims to engineer PROGRESS for societal advancement. (i am hwanglander)">
-  <meta name="keywords" content="junsa hwang, junsa, hwang, junsa portfolio, hwanglander, personal website, bio, projects, junsa hwang foundation, mechanical, engineering">
-  <title>Junsa Hwang</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="icon" type="image/png" href="/imgs/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/imgs/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="/imgs/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png" />
-  <link rel="manifest" href="/imgs/favicon/site.webmanifest" />
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Junsa Hwang is a mechanical engineering student and innovator who aims to engineer PROGRESS for societal advancement. (i am hwanglander)">
+<meta name=keywords content="junsa hwang, junsa, hwang, junsa portfolio, hwanglander, personal website, bio, projects, junsa hwang foundation, mechanical, engineering">
+<title>Junsa Hwang</title>
+<link rel=stylesheet href=css/styles.css>
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css>
+<link rel=icon type=image/png href=/imgs/favicon/favicon-96x96.png sizes=96x96>
+<link rel=icon type=image/svg+xml href=/imgs/favicon/favicon.svg>
+<link rel="shortcut icon" href=/imgs/favicon/favicon.ico>
+<link rel=apple-touch-icon sizes=180x180 href=/imgs/favicon/apple-touch-icon.png>
+<link rel=manifest href=/imgs/favicon/site.webmanifest>
 </head>
 <body>
-<!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR -->
-<div class="sidebar">
-  <div class="sidebarinsides">
-    <div class="myname">
-      <a href="index.html">JUNSA HWANG</a>
-    </div>
-    <ul>
-      <li><a href="index.html" class="active">HOME</a></li>  
-      <li><a href="projects.html" >PROJECTS</a></li>
-      <li><a href="foundation.html">FOUNDATION</a></li>
-      <li><a href="tellmeajoke.html">TELL ME A JOKE</a></li>
-      <li><a href="https://linktr.ee/junsahwang" target="_blank" rel="noopener noreferrer" class="special2" style="color: #fff;">CONTACT</a></li>
-    </ul>
-    <a href="#" style="text-decoration: none; color: inherit;" onclick="showPopup(event)">
-      <p class="hwanglander">(I am hwanglander)</p>
-    </a>
-    <div class="overlay" onclick="hidePopup()"></div>
-    <div class="popup-image">
-        <img src="imgs/hwanglander.png" alt="hwanglander" style="max-width: 100%; max-height: 80vh;" draggable="false">
-    </div>
-    <audio id="popupAudio" src="audios/icandoanything.mp3" preload="auto"></audio>
-  </div>
+
+<div class=sidebar>
+<div class=sidebarinsides>
+<div class=myname>
+<a href=index.html>JUNSA HWANG</a>
 </div>
-<!--SIDEBAR--><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR --><!-- SIDEBAR -->
-
-<!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR -->
-<div class="topbar" id="topbar">
-  <div class="topbar2">
-    <div class="open" onclick="openMediasidebar()">
-      <i class="fas fa-bars"></i> 
-    </div>
-    <a href="https://linktr.ee/junsahwang" target="_blank" rel="noopener noreferrer" class="special2" style="color: #fff;  text-decoration: none;
-      font-size: 1.05rem;
-      display: block;
-      transition: color 0.3s ease;
-      display: inline; ">Contact</a>
-  </div>
+<ul>
+<li><a href=index.html class=active>HOME</a></li>
+<li><a href=projects.html>PROJECTS</a></li>
+<li><a href=foundation.html>FOUNDATION</a></li>
+<li><a href=tellmeajoke.html>TELL ME A JOKE</a></li>
+<li><a href=https://linktr.ee/junsahwang target=_blank rel="noopener noreferrer" class=special2 style=color:#fff>CONTACT</a></li>
+</ul>
+<a href=# style=text-decoration:none;color:inherit onclick=showPopup(event)>
+<p class=hwanglander>(I am hwanglander)</p>
+</a>
+<div class=overlay onclick=hidePopup()></div>
+<div class=popup-image>
+<img src=imgs/hwanglander.png alt=hwanglander style=max-width:100%;max-height:80vh draggable=false>
 </div>
-<!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR -->
-<div class="mediasidebar" id="mediasidebar">
-  <div class="close" onclick="closeMediasidebar()">
-    <i class="fas fa-arrow-left"></i> 
-  </div>
-  <div class="sidebar2">
-    <div class="sidebarinsides2">
-      <div class="myname2">
-        <a href="index.html">JUNSA<br>HWANG</a>
-      </div>
-      <ul>
-        <li><a href="index.html" class="active">HOME</a></li>  
-        <li><a href="projects.html" >PROJECTS</a></li>
-        <li><a href="foundation.html">FOUNDATION</a></li>
-        <li><a href="tellmeajoke.html">TELL ME A JOKE</a></li>
-      </ul>
-      <a href="#" style="text-decoration: none; color: inherit;" onclick="showPopup2(event)">
-        <p class="hwanglander2">(I am hwanglander)</p>
-      </a>
-      <div class="overlay2" onclick="hidePopup2()"></div>
-      <div class="popup-image2">
-          <img src="imgs/hwanglander.png" alt="hwanglander" style="max-width: 100%; max-height: 80vh;" draggable="false">
-      </div>
-      <audio id="popupAudio2" src="audios/icandoanything.mp3" preload="auto"></audio>
-    </div>
-  </div>
+<audio id=popupAudio src=audios/icandoanything.mp3 preload=auto></audio>
 </div>
-<!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR --><!-- MEDIASIDEBAR -->
-<!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR --><!-- TOPBAR -->
+</div>
 
-<!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN -->
-<div class="main">
-  <div class="banner">
-    <img class="bannerimg" src="imgs/home/home1.png" alt="young junsa playing in the snow" loading="lazy" draggable="false">
-    <div class="content">
-      <div class="contentinside">
-        <div class="imjunsa" id="typewriter">
-          <span>Hi!</span>
-          <span>I'm Junsa.</span>
-        </div>        
-      </div>
-    </div>
-  </div>
-  <div class="stage">
-    <div class="stagecontent2">
-      <div class="stagewords2">
-        <h1>
-          WHO AM I
-        </h1>
-        <p>
-          I'm currently a student at Boston University studying <span class="special">Mechanical Engineering.</span> <br> <br> Currently, I have a basic understanding of some coding languages including <span class="special">HTML , CSS, and JS.</span> I have also worked on several robotics projects, where I used wireless controls such as flex sensors and accelerometers along with basic <span class="special">C++.</span> <br> <br> Some other things I enjoy doing are playing tennis as I'm on the <span class="special"> BU Men's Club Tennis Team </span> (go terriers), as well as playing the <span class="special">violin,</span> which I've played since age six.
-        </p>
-      </div>
-      <img class="stageimg" src="imgs/home/home2.png" alt="junsa smiling at an event " loading="lazy" draggable="false">
-    </div>
-  </div>
 
-  <div class="stage">
-    <div class="stagecontent1">
-      <img class="stageimg1" src="imgs/home/home3.png" alt="junsa smiling at santa cruz" loading="lazy" draggable="false">
-      <div class="stagewords1">
-        <h1>
-          WHAT AM I DOING NOW
-        </h1>
-        <p>
-          As of late, I'm learning more about the fundamentals used in <span class="special"> mechanical engineering projects</span> such as material science, thermodynamics, and other engineering mechanics. Additionally, I would like to start some projects and intern at companies that would involve <span class="special">CAD </span> and control systems. <br> <br> In the long term, I hope to create and build something that benefits society, solving real-world challenges and improving lives. My goal is to <span class="special">engineer PROGRESS</span> , whether through advancements in technology, infrastructure, or environmental conservation.
-        </p>
-      </div>
-      <img class="stageimgmobile" src="imgs/home/home3.png" alt="junsa smiling at santa cruz" loading="lazy" draggable="false">
-    </div>
-  </div>
+<div class=topbar id=topbar>
+<div class=topbar2>
+<div class=open onclick=openMediasidebar()>
+<i class="fas fa-bars"></i>
+</div>
+<a href=https://linktr.ee/junsahwang target=_blank rel="noopener noreferrer" class=special2 style="color:#fff;text-decoration:none;font-size:1.05rem;display:block;transition:color .3s ease;display:inline">Contact</a>
+</div>
+</div>
 
-  <div class="stage">
-    <div class="stagecontent2">
-      <div class="stagewords2">
-        <h1>
-          SKILLS
-        </h1>
-        <p>
-          Brawl Stars - add <span class="special">Hwanglander</span>
-        </p>
-      </div>
-      <video class="stagevid" autoplay muted playsinline loop>
-        <source src="imgs/home/home4.mp4" type="video/mp4">
-      </video>             
-    </div>
-  </div>
-<!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER -->
+<div class=mediasidebar id=mediasidebar>
+<div class=close onclick=closeMediasidebar()>
+<i class="fas fa-arrow-left"></i>
+</div>
+<div class=sidebar2>
+<div class=sidebarinsides2>
+<div class=myname2>
+<a href=index.html>JUNSA<br>HWANG</a>
+</div>
+<ul>
+<li><a href=index.html class=active>HOME</a></li>
+<li><a href=projects.html>PROJECTS</a></li>
+<li><a href=foundation.html>FOUNDATION</a></li>
+<li><a href=tellmeajoke.html>TELL ME A JOKE</a></li>
+</ul>
+<a href=# style=text-decoration:none;color:inherit onclick=showPopup2(event)>
+<p class=hwanglander2>(I am hwanglander)</p>
+</a>
+<div class=overlay2 onclick=hidePopup2()></div>
+<div class=popup-image2>
+<img src=imgs/hwanglander.png alt=hwanglander style=max-width:100%;max-height:80vh draggable=false>
+</div>
+<audio id=popupAudio2 src=audios/icandoanything.mp3 preload=auto></audio>
+</div>
+</div>
+</div>
+
+
+
+<div class=main>
+<div class=banner>
+<img class=bannerimg src=imgs/home/home1.png alt="young junsa playing in the snow" loading=lazy draggable=false>
+<div class=content>
+<div class=contentinside>
+<div class=imjunsa id=typewriter>
+<span>Hi!</span>
+<span>I'm Junsa.</span>
+</div>
+</div>
+</div>
+</div>
+<div class=stage>
+<div class=stagecontent2>
+<div class=stagewords2>
+<h1>
+WHO AM I
+</h1>
+<p>
+I'm currently a student at Boston University studying <span class=special>Mechanical Engineering.</span> <br> <br> Currently, I have a basic understanding of some coding languages including <span class=special>HTML , CSS, and JS.</span> I have also worked on several robotics projects, where I used wireless controls such as flex sensors and accelerometers along with basic <span class=special>C++.</span> <br> <br> Some other things I enjoy doing are playing tennis as I'm on the <span class=special> BU Men's Club Tennis Team </span> (go terriers), as well as playing the <span class=special>violin,</span> which I've played since age six.
+</p>
+</div>
+<img class=stageimg src=imgs/home/home2.png alt="junsa smiling at an event " loading=lazy draggable=false>
+</div>
+</div>
+<div class=stage>
+<div class=stagecontent1>
+<img class=stageimg1 src=imgs/home/home3.png alt="junsa smiling at santa cruz" loading=lazy draggable=false>
+<div class=stagewords1>
+<h1>
+WHAT AM I DOING NOW
+</h1>
+<p>
+As of late, I'm learning more about the fundamentals used in <span class=special> mechanical engineering projects</span> such as material science, thermodynamics, and other engineering mechanics. Additionally, I would like to start some projects and intern at companies that would involve <span class=special>CAD </span> and control systems. <br> <br> In the long term, I hope to create and build something that benefits society, solving real-world challenges and improving lives. My goal is to <span class=special>engineer PROGRESS</span> , whether through advancements in technology, infrastructure, or environmental conservation.
+</p>
+</div>
+<img class=stageimgmobile src=imgs/home/home3.png alt="junsa smiling at santa cruz" loading=lazy draggable=false>
+</div>
+</div>
+<div class=stage>
+<div class=stagecontent2>
+<div class=stagewords2>
+<h1>
+SKILLS
+</h1>
+<p>
+Brawl Stars - add <span class=special>Hwanglander</span>
+</p>
+</div>
+<video class=stagevid autoplay muted playsinline loop>
+<source src=imgs/home/home4.mp4 type=video/mp4>
+</video>
+</div>
+</div>
+
 <footer>
-  <div class="footermedia">
-    <a href="https://www.instagram.com/junsahwang/" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.facebook.com/junsa.hwang/" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.linkedin.com/in/junsa-hwang-218805213/" target="_blank"><i class="fab fa-linkedin"></i></a>
-  </div>
-  <div class="copyright">
-    &copy; 2025 JUNSA HWANG
-  </div>
-</footer>
-<!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER -->
+<div class=footermedia>
+<a href=https://www.instagram.com/junsahwang/ target=_blank><i class="fab fa-instagram"></i></a>
+<a href=https://www.facebook.com/junsa.hwang/ target=_blank><i class="fab fa-facebook"></i></a>
+<a href=https://www.linkedin.com/in/junsa-hwang-218805213/ target=_blank><i class="fab fa-linkedin"></i></a>
 </div>
-<!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN --><!-- MAIN -->
+<div class=copyright>
+&copy; 2025 JUNSA HWANG
+</div>
+</footer>
 
-<script src="app.js"></script>
+</div>
+
+<script src=app.js></script>
 </body>
 </html>
-
