@@ -21,26 +21,6 @@ body {
 }
 
 /* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR */
-.sidebar {
-  height: 100%;
-  width: 25%;
-  position: fixed;
-  background-color: #1a1a1a;
-  overflow-x: hidden;
-  z-index: 99;
-  border-right: 0.5px solid #333; 
-}
-
-.sidebarinsides {
-  padding: 15%;
-}
-
-.sidebar ul li {
-  opacity: 0;
-  transform: translateX(-20px);
-  animation: fadeInSidebar 0.8s ease forwards;
-}
-
 @keyframes fadeInSidebar {
   to {
     opacity: 1;
@@ -64,11 +44,33 @@ body {
   animation-delay: 0.6s;
 }
 
+.sidebar ul li:nth-child(5) {
+  animation-delay: 0.75s;
+}
+
+.sidebar {
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  background-color: #1a1a1a;
+  overflow-x: hidden;
+  z-index: 99;
+  border-right: 0.5px solid #333; 
+}
+
+.sidebarinsides {
+  padding: 15%;
+}
+
+.sidebar ul li {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeInSidebar 0.8s ease forwards;
+}
+
 .myname a {
   font-size: 3rem;
-  color: transparent;
-  background: linear-gradient(to right, #9a24e8, #26e0da);
-  background-clip: text; 
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
 }
@@ -89,6 +91,7 @@ body {
   font-size: 1.05rem;
   display: block;
   transition: color 0.3s ease;
+  display: inline; 
 }
 
 .sidebar ul li a:hover {
@@ -317,11 +320,10 @@ body {
     display: inline-block;
     opacity: 0;
     color: #fff;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding: 2%;
   }
   
-  /* Highlighter animation */
+  /* Highlighter animation with left-to-right gradient and delay */
   .special2.animated::before {
     content: '';
     position: absolute;
@@ -329,12 +331,12 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to right, #9a24e8, #26e0da);
+    background: linear-gradient(to right, #26e0da, #9a24e8); /* Left to right gradient */
     border-radius: 0.5rem;
     transform: scaleX(0);
     transform-origin: left;
     z-index: -1;
-    animation: highlighter-animation 2s forwards; 
+    animation: highlighter-animation 1s forwards 0.4s; /* Added 0.75s delay */
   }
   
   .special2.animated {
@@ -350,8 +352,7 @@ body {
       transform: scaleX(1);
       transform-origin: left;
     }
-  }  
-
+  }
 
   .stageimg {
     width: 45%;
@@ -416,7 +417,7 @@ footer {
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .sidebar {
-    width: 35%;
+    width: 40%;
   }
 
   .myname a {
@@ -429,8 +430,8 @@ footer {
   }
 
   .main {
-    width: 65%;
-    margin-left: 35%;
+    width: 60%;
+    margin-left: 40%;
   }
 
   .banner {
@@ -576,11 +577,10 @@ footer {
 
   .sidebar2 {
     padding: 5%;
-    padding-left: 10%;
+    padding-left: 13%;
     padding-top: 3%;
     z-index: 1000;
   }
-
 
   .mediasidebar {
     display: block;
@@ -603,6 +603,7 @@ footer {
     transform: translate(-50%, -50%);
     z-index: 1000;
   }
+
   .overlay2 {
     display: none;
     position: fixed;
@@ -620,14 +621,13 @@ footer {
 
   .myname2 a {
     text-decoration: none;
-    color: transparent;
-    background: linear-gradient(to right, #9a24e8, #26e0da);
-    background-clip: text;
+    color: #fff;
     font-size: 4rem;
   }
 
   .sidebarinsides2 {
     padding: 5%;
+    padding-top: 0%;
     color: #fff;
     list-style: none;
     text-align: left;
@@ -639,8 +639,8 @@ footer {
   }
 
   .sidebarinsides2 ul li {
-    padding-top: 5%;
-    font-size: 1.2rem;
+    padding-top: 7%;
+    font-size: 1.05rem;
   }
 
   .sidebarinsides2 ul li a{
@@ -657,9 +657,7 @@ footer {
     padding: 7%;
     padding-bottom: 0;
     font-size: 1.3rem;
-    color: transparent;  
-    background: linear-gradient(to right, #9a24e8, #26e0da);
-    background-clip: text; 
+    color: #fff;
   }
 
   .close:hover {

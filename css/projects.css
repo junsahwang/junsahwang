@@ -36,9 +36,7 @@ body {
 
 .myname a {
   font-size: 3rem;
-  color: transparent;
-  background: linear-gradient(to right, #9a24e8, #26e0da);
-  background-clip: text; 
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
 }
@@ -59,11 +57,26 @@ body {
   font-size: 1.05rem;
   display: block;
   transition: color 0.3s ease;
+  display: inline; 
 }
 
 .sidebar ul li a:hover {
   color: #fff;
 }
+.special2 {
+  position: relative;
+  display: inline-block;
+  opacity: 1;
+  color: #fff;
+  padding: 2%;
+  background: linear-gradient(to left, #9a24e8, #26e0da);
+  border-radius: 0.5rem;
+}
+
+.special2:hover {
+  transform: scale(1.1); /* Slightly enlarges the element on hover */
+}
+ 
 
 .sidebar .sidebarinsides ul li a.active {
   color: #fff;
@@ -225,7 +238,7 @@ footer {
   }
 
   .myname a {
-    font-size: 3.7rem;
+    font-size: 3rem;
   }
 
   .sidebarinsides {
@@ -342,8 +355,9 @@ footer {
   
   .sidebar2 {
     padding: 5%;
-    padding-left: 10%;
+    padding-left: 13%;
     padding-top: 3%;
+    z-index: 1000;
   }
 
   .myname2 {
@@ -352,14 +366,13 @@ footer {
 
   .myname2 a {
     text-decoration: none;
-    color: transparent;  
-    background: linear-gradient(to right, #9a24e8, #26e0da);
-    background-clip: text; 
+    color: #fff;
     font-size: 4rem;
   }
 
   .sidebarinsides2 {
     padding: 5%;
+    padding-top: 0%;
     color: #fff;
     list-style: none;
     text-align: left;
@@ -371,8 +384,8 @@ footer {
   }
 
   .sidebarinsides2 ul li {
-    padding-top: 5%;
-    font-size: 1.2rem;
+    padding-top: 7%;
+    font-size: 1.05rem;
   }
 
   .sidebarinsides2 ul li a{
@@ -395,9 +408,7 @@ footer {
     padding: 7%;
     padding-bottom: 0;
     font-size: 1.3rem;
-    color: transparent;  
-    background: linear-gradient(to right, #9a24e8, #26e0da);
-    background-clip: text; 
+    color: #fff;
     z-index: 10; 
   }
 
@@ -420,6 +431,7 @@ footer {
 
   .grid {
     grid-template-columns: repeat(1, 1fr);
+    padding-top: 1%;
   }
 
   .gridimage {
