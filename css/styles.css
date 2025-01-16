@@ -145,7 +145,7 @@ body {
 }
 
 .banner {
-  height: 45vw;
+  height: 40vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -232,24 +232,29 @@ body {
 }
 
 .stage {
-  background-color: #00000000;
+  background-color: #1a1a1a;
+  box-shadow: 0 5px 15px rgb(0, 0, 0);
   height: 70%;
   justify-content: center;
   align-items: center;
-  padding: 3%;
-  padding-top: 10%;
+  margin: 3%;
+  top: 0%;
+  margin-bottom: 10%;
+  border-radius: 0.5rem;
 }
 
 .stagecontent1 {
   display: flex;
   flex-direction: row;
   justify-content: left;
+  padding: 3%;
 }
 
 .stagecontent2 {
   display: flex;
   flex-direction: row;
   justify-content: right;
+  padding: 3%;
 }
 
 .stagewords1 {
@@ -269,6 +274,7 @@ body {
 .stagewords2 h1, 
 .stagewords1 h1{
   padding-bottom: 5%;
+  padding-top: 5%;
   font-weight: bold;
   font-size: 2rem;
   color: transparent;  
@@ -369,8 +375,6 @@ body {
 
   .stageimg {
     width: 45%;
-    height: 65vh;
-    padding: 0%;
     object-fit: cover;
     border-radius: 0.5rem;
   }
@@ -378,12 +382,11 @@ body {
   .stagevid {
     width: 70%; 
     height: auto;
-    border-radius: 0.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
   }
 
   .stageimg1 {
     width: 45%;
-    height: 60vh;
     padding: 0%;
     object-fit: cover;
     border-radius: 0.5rem;
@@ -392,10 +395,9 @@ body {
   .stageimgmobile {
     display: none;
     width: 45%;
-    height: 80vh;
     padding: 0%;
     object-fit: cover;
-    border-radius: 0.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
   }
 
 
@@ -466,12 +468,19 @@ footer {
   }
 
   .stage {
-    padding: 5%;
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+    height: 70%;
+    margin: 3%;
+    margin-top: 10%;
+    top: 0;
+    border-radius: 0.5rem;
   }
 
   .stageimg {
     width: 100%;
     height: 60vh;
+    border-radius: 0.5rem;
   }
 
   .stage h1 {
@@ -483,23 +492,22 @@ footer {
   .stagecontent2 {
     flex-direction: column;
     align-items: center;
+    padding: 5%;
+    padding-top: 0%;
   }
 
   .stagewords1,
   .stagewords2 {
     width: 100%;
     padding: 5% 0%;
-
   }
 
   .stagewords2 {
     display: block;
-    
   } 
 
   .stagewords1 {
     display: block;
-    padding-top: 0%;
   }
 
   .stageimg1 {
@@ -508,13 +516,14 @@ footer {
 
   .stagevid {
     width: 100%; 
+    border-radius: 0.5rem;
   }
 
   .stageimgmobile {
     display: block;
     width: 100%;
     height: auto;
-    padding: 0%;
+    border-radius: 0.5rem;
     object-fit: cover;
   }
 }
@@ -707,12 +716,10 @@ footer {
   .stageimg {
     width: 100%;
     height: 60vh;
-    padding-top: 10%;
   }
 
   .stagevid {
     width: 100%; 
-    padding-top: 10%;
   }
 
   .stageimg1 {
@@ -725,7 +732,6 @@ footer {
     height: auto;
     padding: 0%;
     object-fit: cover;
-    padding-top: 10%;
   }
 
   .stage h1 {
@@ -748,6 +754,7 @@ footer {
 
   .stagewords2 {
     display: block;
+    padding-bottom: 10%;
   }
 
   .stagewords2 p 
@@ -757,7 +764,7 @@ footer {
 
   .stagewords1 {
     display: block;
-    padding-top: 0%;
+    padding-bottom: 10%;
   }
 
   .footermedia {

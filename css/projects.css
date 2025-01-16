@@ -131,79 +131,84 @@ body {
   margin-left: 25%;
   display: grid;
 }
-
 .grid {
   display: grid;
   padding: 5%;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
+
+.grid-item:nth-child(1),
+.grid-item:nth-child(4n) {
+  grid-column: span 2; 
+}
+
+.grid-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 .grid-item {
   text-decoration: none;
   text-align: center;
-  background-color: #000000; 
+  background-color: #1a1a1a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.549);
   box-sizing: border-box;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.5s ease;
   border-radius: 0.5rem;
-}
-
-.grid-item {
   opacity: 0;
-  transform: translateY(20px);  /* Start below the viewport */
+  transform: translateY(20px);
   transition: opacity 1.2s ease, transform 1.2s ease;
 }
 
-/* Class that will be added when the item enters the viewport */
-.grid-item.visible {
-  opacity: 1;
-  transform: translateY(0);  /* Slide into view */
-}
 .grid-item:hover {
-  transform: scale(1.02); 
+  transform: scale(1.02);
 }
 
 .gridinsides {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 5%;
 }
 
 .gridimage {
-  width: 100%;
-  filter: grayscale(20%) brightness(70%); 
+  filter: grayscale(20%) brightness(70%);
   transition: filter 0.5s ease;
   height: 25rem;
+  width: 100%;
   object-fit: cover;
+  border-radius: 0.5rem;
 }
 
 .grid-item:hover .gridimage {
-  filter: none; 
+  filter: none;
 }
 
 .words {
-  width: 90%; 
-  padding: 1.5rem;
+  width: 100%;
+  padding: 5%;
   text-align: left;
-  display: flex; 
+  display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
 
 .logoname {
-  color: transparent;  
+  color: transparent;
   background: linear-gradient(to right, #9a24e8, #26e0da);
-  background-clip: text; 
+  background-clip: text;
   font-size: 1rem;
   padding-bottom: 1.5rem;
 }
 
 .desc {
-  color: #a3a3a3;
+  color: #a2a2a2;
   font-size: 0.9rem;
 }
+
 /* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */
 
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
@@ -237,6 +242,7 @@ footer {
   
   .grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
   }
 }
 
@@ -263,7 +269,12 @@ footer {
 
   .grid {
     padding: 5%;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .grid-item {
+    grid-column: span 2;
   }
   
   .gridimage {
@@ -291,9 +302,13 @@ footer {
     padding-top: 5rem;
   }
 
+  .grid-item {
+    grid-column: span 2;
+  }
+
   .grid {
     padding: 5%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .topbar {
@@ -444,6 +459,7 @@ footer {
   .grid {
     grid-template-columns: repeat(1, 1fr);
     padding-top: 1%;
+    gap: 3rem;
   }
 
   .gridimage {
