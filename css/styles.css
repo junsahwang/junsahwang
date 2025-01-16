@@ -489,10 +489,12 @@ footer {
   .stagewords2 {
     width: 100%;
     padding: 5% 0%;
+
   }
 
   .stagewords2 {
     display: block;
+    
   } 
 
   .stagewords1 {
@@ -699,6 +701,7 @@ footer {
 
   .stage {
     padding: 5%;
+    padding-top: 0%;
   }
 
   .stageimg {
@@ -739,10 +742,17 @@ footer {
   .stagewords2 {
     width: 100%;
     padding: 5% 0%;
+    padding-top: 0%;
+    text-align: left;
   }
 
   .stagewords2 {
     display: block;
+  }
+
+  .stagewords2 p 
+  .stagewords1 p {
+    padding-top: 3%;
   }
 
   .stagewords1 {
