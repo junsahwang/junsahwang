@@ -10,6 +10,7 @@
 }
 body, h1, h2, h3, p, ul, li {
   font-family: 'Outfit', sans-serif;
+  
 }
 
 body {
@@ -19,19 +20,6 @@ body {
 }
 
 /* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR *//* SIDEBAR */
-.sidebar {
-  height: 100%;
-  width: 25%;
-  position: fixed;
-  background-color: #1a1a1a;
-  overflow-x: hidden;
-  z-index: 99;
-  border-right: 0.5px solid #333; 
-}
-
-.sidebarinsides {
-  padding: 15%;
-}
 .special2 {
   position: relative;
   display: inline-block;
@@ -47,6 +35,28 @@ body {
 }
 
 
+
+.sidebar {
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  background-color: #1a1a1a;
+  overflow-x: hidden;
+  z-index: 99;
+  border-right: 0.5px solid #333; 
+}
+
+.sidebarinsides {
+  padding: 20%;
+  padding-right: 15%;
+}
+
+.sidebar ul li {
+  transform: translateX(0px);
+  animation: fadeInSidebar 0.5s ease forwards;
+  padding-top: 25%;
+}
+
 .myname a {
   font-size: 3rem;
   color: #fff;
@@ -60,14 +70,10 @@ body {
   padding-top: 5%;
 }
 
-.sidebar ul li {
-  padding-top: 9%;
-}
-
 .sidebar ul li a {
   color: #5c5c5c;
   text-decoration: none;
-  font-size: 1.05rem;
+  font-size: 1rem;
   display: block;
   transition: color 0.3s ease;
   display: inline; 
@@ -78,7 +84,7 @@ body {
 }
 
 .sidebar .sidebarinsides ul li a.active {
-  color: #fff;
+  color: white;
 }
 
 .hwanglander {
@@ -149,30 +155,32 @@ footer {
 
 .footermedia a {
   color: #a3a3a3;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 2%;
 }
 
 .copyright {
   color: #a3a3a3;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding-top: 5%;
 }
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 
 /* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA *//* MEDIA */
-@media screen and (min-width: 1024px) and (max-width: 1250px) {
-  .sidebarinsides {
-    padding: 12%;
-  }
 
+@media screen and (min-width: 1024px) and (max-width: 1264px) {
   .main {
-    width: 70%;
-    margin-left: 30%;
     height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+
+  .myname a {
+    font-size: 2.5rem;
+  }
+  .sidebar ul li {
+    padding-top: 35%;
   }
   
   .fnd {
@@ -187,31 +195,36 @@ footer {
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .sidebar {
-    width: 40%;
+    width: 25%;
   }
   
   .myname a {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
-  
   .sidebarinsides {
-    padding: 17%;
     padding-bottom: 0;
   }
 
   .main {
-    width: 60%;
+    width: 75%;
     height: 90vh;
-    margin-left: 40%;
+    margin-left: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
+  .sidebar ul li {
+    padding-top: 35%;
+  }
+}
 
-  .footermedia a {
-    padding: 4%;
-    font-size: 1.2rem;
-  } 
+@media screen and (max-width: 985px) {
+  .myname a {
+    font-size: 2rem;
+  }
+  .sidebar ul li {
+    padding-top: 35%;
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -229,12 +242,6 @@ footer {
     width: 100%;
     margin-left: 0;
     padding-top: 5rem;
-  }
-
-  .jokeform iframe {
-    width: 98%;
-    height: 100vh;
-    padding: 1%;
   }
 
   .topbar {
@@ -342,8 +349,8 @@ footer {
   }
 
   .sidebarinsides2 ul li {
-    padding-top: 7%;
-    font-size: 1.05rem;
+    padding-top: 20%;
+    font-size: 1rem;
   }
 
   .sidebarinsides2 ul li a{
