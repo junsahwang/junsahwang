@@ -146,7 +146,7 @@ body {
 }
 
 .banner {
-  height: 70vh;
+  height: 45vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -176,47 +176,54 @@ body {
 .contentinside {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 5%;
+  margin-left: 10%;
   width: 90%;
+  text-align: left;
 }
-
 .imjunsa {
-  font-size: 12vw;
-  color: transparent;
-  background: linear-gradient(to right, #9a24e8, #26e0da);
-  background-clip: text; 
-  white-space: nowrap;
-  overflow: hidden;
   display: inline-block;
-  animation: typing 1.5s steps(15, end), blink-caret 0.5s step-end infinite;
-  animation-fill-mode: forwards;
-  text-align: left; 
 }
 
 .imjunsa span {
-  display: block; 
-  text-align: left; 
+  font-size: 12vw;
+  color: transparent;
+  background: linear-gradient(to right, #9a24e8, #26e0da);
+  background-clip: text;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  animation-fill-mode: forwards;
+  border-right: 2px solid #9a24e8; 
 }
 
-@keyframes typing {
+.imjunsa span:first-child {
+  animation: typing-first 0.5s steps(3, end), blink-caret 0.75s step-end 0s forwards;
+}
+
+.imjunsa span:last-child {
+  width: 0;
+  animation: typing-second 1s steps(10, end) 0.7s, blink-caret 0.75s step-end 0.4s forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing-first {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes typing-second {
   from { width: 0; }
   to { width: 100%; }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: #fff; }
-}
-
-.imjunsa.done {
-  animation: typing 2s steps(20, end);
-  border-right: none; 
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  animation-fill-mode: forwards;
-  text-align: left; 
+  0% { border-color: transparent; }
+  50% { border-right: 2px solid #9a24e8; }
+  100% { border-color: transparent; } 
 }
 
 .stage {
@@ -336,7 +343,7 @@ body {
     transform: scaleX(0);
     transform-origin: left;
     z-index: -1;
-    animation: highlighter-animation 1s forwards 0.5s; 
+    animation: highlighter-animation 1.5s forwards; 
   }
   
   .special2.animated {
@@ -413,11 +420,19 @@ footer {
   .sidebarinsides {
     padding: 12%;
   }
+
+  .banner {
+    height: 50vw;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .sidebar {
     width: 40%;
+  }
+
+  .banner {
+    height: 45vw;
   }
 
   .myname a {
@@ -434,12 +449,10 @@ footer {
     margin-left: 40%;
   }
 
-  .banner {
-    height: 50vh; 
-  }
-
   .contentinside {
     height: 60%;
+    margin-left: 0%;
+    justify-content: flex-start;
   }
 
   .stage {
@@ -512,9 +525,9 @@ footer {
   }
 
   .banner {
-    height: 55vh;
+    height: 65vw;
   }
-  
+
   .bannerimg {
     object-fit: cover;
     position: absolute;
@@ -523,14 +536,12 @@ footer {
   }
   
   .contentinside {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 2%;
+    margin-left: 0%;
   }
 
-  .imjunsa {
-    font-size: 18vw;
+  .imjunsa span{
+    font-size: 20vw;
   }
 
   .topbar {
@@ -734,10 +745,6 @@ footer {
 }
 
 @media screen and (max-width: 499px) {
-  .banner {
-    height: 40vh;
-  }
-  
   .bannerimg {
     object-fit: cover;
     position: absolute;
@@ -759,15 +766,12 @@ footer {
   }
 
   .contentinside {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
     gap: 1%; 
+    margin-left: 5%;
   }
 
-  .imjunsa {
-    font-size: 20vw;
+  .imjunsa span{
+    font-size: 18vw;
   }
 
   .footermedia a {
@@ -775,8 +779,20 @@ footer {
     font-size: 1.4rem;
   } 
 }
-  
-@media screen and (max-width: 250px) {
+
+@media screen and (max-width: 648px) {
+
+}
+
+@media screen and (max-width: 383px) {
+
+}
+
+@media screen and (max-width: 295px) {
+
+}
+
+@media screen and (max-width: 287px) {
   .main {
     display: none;
   }
