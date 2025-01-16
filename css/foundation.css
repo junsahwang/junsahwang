@@ -49,6 +49,7 @@ body {
 .sidebarinsides {
   padding: 20%;
   padding-right: 15%;
+  padding-bottom: 0%;
 }
 
 .sidebar ul li {
@@ -88,7 +89,7 @@ body {
 }
 
 .hwanglander {
-  color: #2b2b2b;
+  color: #000000;
   margin-top: 50%;
   font-size: 1rem;
 }
@@ -233,7 +234,7 @@ footer {
   }
 
   .hwanglander2 {
-    color: #363636;
+    color: #000000;
     margin-top: 20%;
     font-size: 1rem;
   }

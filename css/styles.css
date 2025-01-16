@@ -61,6 +61,7 @@ body {
 .sidebarinsides {
   padding: 20%;
   padding-right: 15%;
+  padding-bottom: 0%;
 }
 
 .sidebar ul li {
@@ -101,7 +102,7 @@ body {
 }
 
 .hwanglander {
-  color: #2b2b2b;
+  color: #000000;
   margin-top: 50%;
   font-size: 1rem;
 }
@@ -199,12 +200,12 @@ body {
 }
 
 .imjunsa span:first-child {
-  animation: typing-first 0.5s steps(3, end), blink-caret 0.75s step-end 0s forwards;
+  animation: typing-first 0.3s steps(2, end), blink-caret 0.75s step-end 0s forwards;
 }
 
 .imjunsa span:last-child {
   width: 0;
-  animation: typing-second 1s steps(10, end) 0.7s, blink-caret 0.75s step-end 0.4s forwards;
+  animation: typing-second 1.1s steps(12, end) 0.2s, blink-caret 0.75s step-end 0.4s forwards;
   animation-fill-mode: forwards;
 }
 
@@ -525,7 +526,7 @@ footer {
   }
 
   .hwanglander2 {
-    color: #363636;
+    color: #000000;
     margin-top: 20%;
     font-size: 1rem;
   }
