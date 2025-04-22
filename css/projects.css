@@ -133,9 +133,10 @@ body {
 }
 .grid {
   display: grid;
-  padding: 5%;
+  padding: 3%;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  padding-top: 0;
 }
 
 
