@@ -246,7 +246,6 @@ body {
 
 .resume-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 30px 60px rgba(0,255,255,0.4);
 }
 
 .small-print {
