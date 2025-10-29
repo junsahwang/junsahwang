@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Junsa Hwang Resume pushes for affordable learning for in need college students (junsa hwang)">
+<title>Junsa Hwang | Resume</title>
+<link rel=stylesheet href=css/resume.css>
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel=stylesheet>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css>
+<link rel="icon" type="image/png" href="imgs/jh.png">
+<link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+</head>
+<body>
+
+<div class=sidebar>
+<div class=sidebarinsides>
+<div class=myname>
+<a href=index.html>JUNSA HWANG</a>
+</div>
+<ul>
+<li><a href=index.html>Home</a></li>
+<li><a href=projects.html>Projects</a></li>
+<li><a href=resume.html class=active>Resume</a></li>
+<li><a href=tellmeajoke.html>Tell Me a Joke</a></li>
+<li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=junsaemail@gmail.com" target=_blank rel="noopener noreferrer" class=special2 style="color: #fff; font-size: 1rem; padding-left: 5%; padding-right: 5%;">Contact</a></li>
+</ul>
+<a href=# style=text-decoration:none;color:inherit onclick=showPopup(event)>
+<p class=hwanglander>(i am hwanglander)</p>
+</a>
+<div class=overlay onclick=hidePopup()></div>
+<div class=popup-image>
+<img src=imgs/hwanglander.png alt=hwanglander style=max-width:100%;max-height:80vh>
+</div>
+<audio id=popupAudio src=audios/icandoanything.mp3 preload=auto></audio>
+</div>
+</div>
+
+
+<div class=topbar id=topbar>
+<div class=topbar2>
+<div class=open onclick=openMediasidebar()>
+<i class="fas fa-bars"></i>
+</div>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=junsaemail@gmail.com" target=_blank rel="noopener noreferrer" class=special2 style="color:#fff;text-decoration:none;font-size:1.05rem;display:block;transition:color .3s ease;display:inline">Contact</a>
+</div>
+</div>
+
+
+<div class=mediasidebar id=mediasidebar>
+<div class=close onclick=closeMediasidebar()>
+<i class="fas fa-arrow-left"></i>
+</div>
+<div class=sidebar2>
+<div class=sidebarinsides2>
+<div class=myname2>
+<a href=index.html>JUNSA<br>HWANG</a>
+</div>
+<ul>
+<li><a href=index.html>Home</a></li>
+<li><a href=projects.html>Projects</a></li>
+<li><a href=resume.html class=active>Resume</a></li>
+<li><a href=tellmeajoke.html>Tell Me a Joke</a></li>
+</ul>
+<a href=# style=text-decoration:none;color:inherit onclick=showPopup2(event)>
+<p class=hwanglander2>(i am hwanglander)</p>
+</a>
+<div class=overlay2 onclick=hidePopup2()></div>
+<div class=popup-image2>
+<img src=imgs/hwanglander.png alt=hwanglander style=max-width:100%;max-height:80vh>
+</div>
+<audio id=popupAudio2 src=audios/icandoanything.mp3 preload=auto></audio>
+</div>
+</div>
+</div>
+
+
+
+<div class=main>
+  <div>
+    <section class="resume-interactive">
+  
+      <div class="resume-cards">
+        <div class="card" onclick="toggleCard(this)">
+          <h2>🎓 Education</h2>
+          <p>Boston University – Mechanical Engineering ’28</p>
+          <div class="card-details">
+            <ul>
+              <li>Relevant Coursework: Mechanics, Physics II, Programming, CAD Design</li>
+              <li>Clubs: UAV, Theta Tau, Triathlon Team</li>
+              <li>GPA: 3.5 ish</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="card" onclick="toggleCard(this)">
+          <h2>🚀 Projects</h2>
+          <p>Hover / click for highlights</p>
+          <div class="card-details">
+            <ul>
+              <li><b>A.U.R.A.</b> – Brain-controlled assistive robot arm (Arduino + EEG headset control)</li>
+              <li><b>QueueCube</b> – Smart tennis court queueing system, tested in Sunnyvale parks (500+ users)</li>
+              <li><b>Search + Rescue Drone</b> – Infrared-guided UAV platform for heat signature detection</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="card" onclick="toggleCard(this)">
+          <h2>🧰 Skills</h2>
+          <p>click for details</p>
+          <div class="card-details">
+            <ul>
+              <li>CAD: Onshape, SolidWorks</li>
+              <li>Code: C++, Python, JavaScript, MATLAB</li>
+              <li>Hardware: Arduino, motor drivers, sensors, custom control rigs</li>
+              <li>Other: soldering, 3D printing, talking to adults in meetings</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="card" onclick="toggleCard(this)">
+          <h2>🏗 Experience</h2>
+          <p>internships + other</p>
+          <div class="card-details">
+            <ul>
+              <li>
+                <b>Building Envelope Materials</b> – CAD + on-site testing intern  
+                <br>• designed / prototyped material transport system that made installs faster  
+                <br>• acted as interim advisor and coordinated crews on job sites
+              </li>
+              <li>
+                <b>BU UAV Club Exec</b> – taught drone assembly + flight control  
+                <br>• ran weekly build sessions, helped 100+ members get flight-ready  
+                <br>• led showcase so first-years could flex working builds
+              </li>
+              <li>
+                <b>QueueCube Founder</b> – built live queueing web app  
+                <br>• worked with city officials and vendors to prep rollout hardware
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <a href="imgs/resume/resume1.png" class="resume-btn" target="_blank" rel="noopener">
+        ⬇ Download Full Resume (PDF)
+      </a>
+    </section>
+  </div>
+  
+
+<footer>
+<div class=footermedia>
+<a href=https://www.instagram.com/junsahwang/ target=_blank><i class="fab fa-instagram"></i></a>
+<a href=https://www.facebook.com/junsa.hwang/ target=_blank><i class="fab fa-facebook"></i></a>
+<a href=https://www.linkedin.com/in/junsa-hwang-218805213/ target=_blank><i class="fab fa-linkedin"></i></a>
+</div>
+<div class=copyright>
+&copy; 2025 JUNSA HWANG
+</div>
+</footer>
+
+</div>
+<script src=app.js></script>
+</body>
+</html>

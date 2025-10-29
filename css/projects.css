@@ -139,7 +139,6 @@ body {
   padding-top: 0;
 }
 
-
 .grid-item:nth-child(1),
 .grid-item:nth-child(4n) {
   grid-column: span 2; 
